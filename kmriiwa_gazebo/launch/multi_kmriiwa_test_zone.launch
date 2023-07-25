@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- Launch Kmriiwa Gazebo simulation in an empty world -->
 <launch>
 
@@ -29,7 +30,7 @@
       <arg name="init_pose_x" value="1.5"/>
       <arg name="init_pose_y" value="0.0"/>
       <arg name="init_pose_z" value="0.0"/>
-      <arg name="init_pose_yew" value="0.0"/>
+      <arg name="init_pose_yaw" value="0.0"/>
     </include>
 
     <!-- spawn the controllers -->
@@ -50,7 +51,7 @@
       <arg name="init_pose_x" value="3.5"/>
       <arg name="init_pose_y" value="5.0"/>
       <arg name="init_pose_z" value="0.0"/>
-      <arg name="init_pose_yew" value="1.57"/>
+      <arg name="init_pose_yaw" value="1.57"/>
     </include>
 
     <!-- spawn the controllers -->
