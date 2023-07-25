@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <launch>
   <arg name="use_namespace" default="true"/>
   <arg name="robot_name" default="kmriiwa"/>
