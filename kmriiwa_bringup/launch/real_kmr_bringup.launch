@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <!-- Args -->
+  <arg name="robot_name" default="kmriiwa" />
+  <arg name="publish_frequency" default="10"/>
+  <arg name="rviz" default="true"/>
+  <arg name="no_static_map" default="false"/>
+
+  <arg name="use_namespace" default="true"/>
+  <arg name="robot_extras" default="$(find kmriiwa_description)/urdf/robot/empty.xacro"/>
+  
+  <!-- Robot Description -->
+  <group ns="$(eval robot_name if use_namespace == 1 else '/')">
+    
+    <include file="$(find kmriiwa_description)/launch/kmriiwa_upload.launch">
+      <arg name="robot_name" value="$(arg robot_name)" />
+      <arg name="robot_extras" value="$(arg robot_extras)"/>
+    </include>
+    
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher">
+      <param name="publish_frequency" value="$(arg publish_frequency)"/>
+      <remap from="joint_states" to="/$(arg robot_name)/arm/joint_states"/>
+    </node>
+  </group>
+
+  <!-- TF to Simply Join the KUKA Driver and the URDF -->
+  <node pkg="tf2_ros" type="static_transform_publisher" name="base_2_base" args="0 0 0 0 0 0 /base_link /kmriiwa_base_footprint"/>
+
+  <!-- Remapping cmd_vel -->
+  <!-- <remap from="/cmd_vel" to="/$(arg robot_name)/base/command/cmd_vel" /> -->
+  <node pkg="topic_tools" type="relay" name="cmd_vel_remap" args="/$(arg robot_name)/base/command/cmd_vel /cmd_vel"/>
+
+  <!-- Mapless Navigation -->
+  <group if="$(arg no_static_map)">
+
+    <!-- Planning Stack -->
+    <include file="$(find kmriiwa_bringup)/launch/planning_stack_bringup.launch">
+      <arg name="robot_name" value="$(arg robot_name)" />
+      <arg name="rviz" value="$(arg rviz)"/>
+      <arg name="no_static_map" value="$(arg no_static_map)"/>
+    </include>
+
+    <!-- GMapping SLAM -->
+    <include file="$(find kmriiwa_navigation)/launch/gmapping.launch">
+      <arg name="robot_name" value="$(arg robot_name)" />
+    </include>
+
+  </group>
+
+  <!-- Navigation Using Stored Map -->
+  <group unless="$(arg no_static_map)">
+
+    <!-- Planning Stack -->
+    <include file="$(find kmriiwa_bringup)/launch/planning_stack_bringup.launch">
+      <arg name="robot_name" value="$(arg robot_name)" />
+      <arg name="rviz" value="$(arg rviz)"/>
+      <arg name="no_static_map" value="$(arg no_static_map)"/>
+      <arg name="map_file" value="$(find kmriiwa_navigation)/maps/SEARCH_real.yaml"/>
+    </include>
+
+  </group>
+
+</launch>
