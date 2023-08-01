@@ -57,7 +57,7 @@
       <arg name="robot_name" value="$(arg robot_name)" />
       <arg name="rviz" value="$(arg rviz)"/>
       <arg name="no_static_map" value="$(arg no_static_map)"/>
-      <arg name="map_file" value="$(find kmriiwa_navigation)/maps/SEARCH_real.yaml"/>
+      <arg name="map_file" value="$(find kmriiwa_navigation)/maps/spirit_cell_paper.yaml"/>
     </include>
 
   </group>
