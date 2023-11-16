@@ -37,7 +37,7 @@
     <color rgba="1.0 1.0 1.0 1.0"/>
   </material>
 
-  <material name="aluminum">
+  <material name="iiwa_aluminum">
       <color rgba="0.5 0.5 0.5 1"/>
   </material>
 
