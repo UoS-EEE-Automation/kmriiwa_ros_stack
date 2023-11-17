@@ -5,7 +5,7 @@ Panels:
     Property Tree Widget:
       Expanded: ~
       Splitter Ratio: 0.4039517045021057
-    Tree Height: 802
+    Tree Height: 922
   - Class: rviz/Selection
     Name: Selection
   - Class: rviz/Tool Properties
@@ -23,7 +23,7 @@ Panels:
   - Class: rviz/Time
     Name: Time
     SyncMode: 0
-    SyncSource: PointCloud
+    SyncSource: ""
 Preferences:
   PromptSaveOnExit: true
 Toolbars:
@@ -55,7 +55,7 @@ Visualization Manager:
       Draw Behind: false
       Enabled: true
       Name: Map
-      Topic: /kmriiwa/map
+      Topic: /kmr/map
       Unreliable: false
       Use Timestamp: false
       Value: true
@@ -102,7 +102,7 @@ Visualization Manager:
       Draw Behind: false
       Enabled: true
       Name: InflatedMap
-      Topic: /kmriiwa/move_base/global_costmap/costmap
+      Topic: /kmr/move_base/global_costmap/costmap
       Unreliable: false
       Use Timestamp: false
       Value: true
@@ -112,7 +112,7 @@ Visualization Manager:
       Draw Behind: true
       Enabled: true
       Name: InflatedObstacles
-      Topic: /kmriiwa/move_base/local_costmap/costmap
+      Topic: /kmr/move_base/local_costmap/costmap
       Unreliable: false
       Use Timestamp: false
       Value: true
@@ -122,7 +122,7 @@ Visualization Manager:
       Draw Behind: false
       Enabled: true
       Name: Local Costmap
-      Topic: /kmriiwa/move_base/local_costmap/costmap
+      Topic: /kmr/move_base/local_costmap/costmap
       Unreliable: false
       Use Timestamp: false
       Value: true
@@ -317,100 +317,155 @@ Visualization Manager:
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
-        kmriiwa_back_left_wheel_link:
+        camera_bottom_screw_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        camera_color_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        camera_color_optical_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        camera_depth_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        camera_depth_optical_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        camera_infra1_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        camera_infra1_optical_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        camera_infra2_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        camera_infra2_optical_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        camera_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        kmriiwa_back_right_wheel_link:
+        camera_usb_plug_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        kmriiwa_base_footprint:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        kmriiwa_base_link:
+        dummy_ut_probe_base_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        kmriiwa_base_top_link:
+        dummy_ut_probe_contact_frame:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-        kmriiwa_front_left_wheel_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        kmriiwa_front_right_wheel_link:
+        iiwa_link_0:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        kmriiwa_laser_B1_link:
+        iiwa_link_1:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        kmriiwa_laser_B4_link:
+        iiwa_link_2:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        kmriiwa_link_0:
+        iiwa_link_3:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        kmriiwa_link_1:
+        iiwa_link_4:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        kmriiwa_link_2:
+        iiwa_link_5:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        kmriiwa_link_3:
+        iiwa_link_6:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        kmriiwa_link_4:
+        iiwa_link_7:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        kmriiwa_link_5:
+        iiwa_link_ee:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        kmr_back_left_wheel_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        kmriiwa_link_6:
+        kmr_back_right_wheel_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        kmriiwa_link_7:
+        kmr_base_footprint:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        kmr_base_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        kmriiwa_link_ee:
+        kmr_base_top_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-        kmriiwa_riser_flange_link:
+        kmr_front_left_wheel_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        kmr_front_right_wheel_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        kmr_laser_B1_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        kmr_laser_B4_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        kmr_riser_flange_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
       Name: RobotModel
-      Robot Description: /kmriiwa/robot_description
+      Robot Description: /robot_description
       TF Prefix: ""
       Update Interval: 0
       Value: true
@@ -446,98 +501,6 @@ Visualization Manager:
           Expand Link Details: false
           Expand Tree: false
           Link Tree Style: Links in Alphabetic Order
-          kmriiwa_back_left_wheel_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          kmriiwa_back_right_wheel_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          kmriiwa_base_footprint:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          kmriiwa_base_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          kmriiwa_base_top_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          kmriiwa_front_left_wheel_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          kmriiwa_front_right_wheel_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          kmriiwa_laser_B1_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          kmriiwa_laser_B4_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          kmriiwa_link_0:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          kmriiwa_link_1:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          kmriiwa_link_2:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          kmriiwa_link_3:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          kmriiwa_link_4:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          kmriiwa_link_5:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          kmriiwa_link_6:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          kmriiwa_link_7:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          kmriiwa_link_ee:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          kmriiwa_riser_flange_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
         Loop Animation: false
         Robot Alpha: 0.5
         Robot Color: 150; 50; 150
@@ -584,98 +547,6 @@ Visualization Manager:
           Expand Link Details: false
           Expand Tree: false
           Link Tree Style: Links in Alphabetic Order
-          kmriiwa_back_left_wheel_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          kmriiwa_back_right_wheel_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          kmriiwa_base_footprint:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          kmriiwa_base_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          kmriiwa_base_top_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          kmriiwa_front_left_wheel_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          kmriiwa_front_right_wheel_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          kmriiwa_laser_B1_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          kmriiwa_laser_B4_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          kmriiwa_link_0:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          kmriiwa_link_1:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          kmriiwa_link_2:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          kmriiwa_link_3:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          kmriiwa_link_4:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          kmriiwa_link_5:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          kmriiwa_link_6:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          kmriiwa_link_7:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          kmriiwa_link_ee:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          kmriiwa_riser_flange_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
         Robot Alpha: 1
         Show Robot Collision: false
         Show Robot Visual: true
@@ -691,98 +562,6 @@ Visualization Manager:
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
-        kmriiwa_back_left_wheel_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        kmriiwa_back_right_wheel_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        kmriiwa_base_footprint:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        kmriiwa_base_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        kmriiwa_base_top_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        kmriiwa_front_left_wheel_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        kmriiwa_front_right_wheel_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        kmriiwa_laser_B1_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        kmriiwa_laser_B4_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        kmriiwa_link_0:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        kmriiwa_link_1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        kmriiwa_link_2:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        kmriiwa_link_3:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        kmriiwa_link_4:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        kmriiwa_link_5:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        kmriiwa_link_6:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        kmriiwa_link_7:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        kmriiwa_link_ee:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        kmriiwa_riser_flange_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
       Loop Animation: false
       Name: ArmTrajectory
       Robot Alpha: 0.30000001192092896
@@ -807,33 +586,71 @@ Visualization Manager:
           Value: true
         base_link:
           Value: true
+        camera_bottom_screw_frame:
+          Value: true
+        camera_color_frame:
+          Value: true
+        camera_color_optical_frame:
+          Value: true
+        camera_depth_frame:
+          Value: true
+        camera_depth_optical_frame:
+          Value: true
+        camera_infra1_frame:
+          Value: true
+        camera_infra1_optical_frame:
+          Value: true
+        camera_infra2_frame:
+          Value: true
+        camera_infra2_optical_frame:
+          Value: true
+        camera_link:
+          Value: true
+        camera_usb_plug_link:
+          Value: true
+        dummy_ut_probe_base_link:
+          Value: true
+        dummy_ut_probe_contact_frame:
+          Value: true
         front_laser:
           Value: true
-        kmriiwa_back_left_wheel_link:
+        iiwa_link_0:
           Value: true
-        kmriiwa_back_right_wheel_link:
+        iiwa_link_1:
           Value: true
-        kmriiwa_base_footprint:
+        iiwa_link_2:
           Value: true
-        kmriiwa_base_link:
+        iiwa_link_3:
           Value: true
-        kmriiwa_base_top_link:
+        iiwa_link_4:
           Value: true
-        kmriiwa_front_left_wheel_link:
+        iiwa_link_5:
           Value: true
-        kmriiwa_front_right_wheel_link:
+        iiwa_link_6:
           Value: true
-        kmriiwa_laser_B1_link:
+        iiwa_link_7:
           Value: true
-        kmriiwa_laser_B4_link:
+        iiwa_link_ee:
           Value: true
-        kmriiwa_link_0:
+        kmr_back_left_wheel_link:
           Value: true
-        kmriiwa_link_7:
+        kmr_back_right_wheel_link:
           Value: true
-        kmriiwa_link_ee:
+        kmr_base_footprint:
           Value: true
-        kmriiwa_riser_flange_link:
+        kmr_base_link:
+          Value: true
+        kmr_base_top_link:
+          Value: true
+        kmr_front_left_wheel_link:
+          Value: true
+        kmr_front_right_wheel_link:
+          Value: true
+        kmr_laser_B1_link:
+          Value: true
+        kmr_laser_B4_link:
+          Value: true
+        kmr_riser_flange_link:
           Value: true
         map:
           Value: true
@@ -846,9 +663,6 @@ Visualization Manager:
       Show Axes: true
       Show Names: true
       Tree:
-        kmriiwa_link_7:
-          kmriiwa_link_ee:
-            {}
         map:
           odom:
             base_link:
@@ -856,23 +670,49 @@ Visualization Manager:
                 {}
               front_laser:
                 {}
-              kmriiwa_base_footprint:
-                kmriiwa_base_link:
-                  kmriiwa_back_left_wheel_link:
+              kmr_base_footprint:
+                kmr_base_link:
+                  kmr_back_left_wheel_link:
                     {}
-                  kmriiwa_back_right_wheel_link:
+                  kmr_back_right_wheel_link:
                     {}
-                  kmriiwa_base_top_link:
-                    kmriiwa_riser_flange_link:
-                      kmriiwa_link_0:
-                        {}
-                  kmriiwa_front_left_wheel_link:
+                  kmr_base_top_link:
+                    kmr_riser_flange_link:
+                      iiwa_link_0:
+                        iiwa_link_1:
+                          iiwa_link_2:
+                            iiwa_link_3:
+                              iiwa_link_4:
+                                iiwa_link_5:
+                                  iiwa_link_6:
+                                    iiwa_link_7:
+                                      iiwa_link_ee:
+                                        dummy_ut_probe_base_link:
+                                          camera_bottom_screw_frame:
+                                            camera_link:
+                                              camera_color_frame:
+                                                camera_color_optical_frame:
+                                                  {}
+                                              camera_depth_frame:
+                                                camera_depth_optical_frame:
+                                                  {}
+                                              camera_infra1_frame:
+                                                camera_infra1_optical_frame:
+                                                  {}
+                                              camera_infra2_frame:
+                                                camera_infra2_optical_frame:
+                                                  {}
+                                              camera_usb_plug_link:
+                                                {}
+                                          dummy_ut_probe_contact_frame:
+                                            {}
+                  kmr_front_left_wheel_link:
                     {}
-                  kmriiwa_front_right_wheel_link:
+                  kmr_front_right_wheel_link:
                     {}
-                  kmriiwa_laser_B1_link:
+                  kmr_laser_B1_link:
                     {}
-                  kmriiwa_laser_B4_link:
+                  kmr_laser_B4_link:
                     {}
       Update Interval: 0
       Value: true
@@ -904,7 +744,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/ThirdPersonFollower
-      Distance: 8.164433479309082
+      Distance: 9.38785171508789
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -920,9 +760,9 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.800000011920929
+      Pitch: 0.5550000071525574
       Target Frame: kmriiwa_base_link
-      Yaw: 3.140000104904175
+      Yaw: 2.605001211166382
     Saved:
       - Angle: 0
         Class: rviz/TopDownOrtho
@@ -943,14 +783,14 @@ Window Geometry:
     collapsed: false
   Displays:
     collapsed: false
-  Height: 1016
+  Height: 1136
   Hide Left Dock: false
   Hide Right Dock: true
   MotionPlanning:
     collapsed: false
   MotionPlanning - Trajectory Slider:
     collapsed: false
-  QMainWindow State: 000000ff00000000fd0000000400000000000001f30000035ffc020000000cfb0000001200530065006c0065006300740069006f006e000000003d000000770000005c00fffffffb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c006100790073010000003d0000035f000000c900fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261fb000000280020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000000000000000fb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e006700000001ff0000019d0000017d00fffffffb000000280020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000000000000000fb00000044004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000001600000016fb0000004200410072006d005400720061006a006500630074006f007200790020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff000000160000001600000001000001e20000035ffc0200000003fc0000003d0000035f0000000000fffffffaffffffff0100000002fb0000000a005600690065007700730000000000ffffffff0000010000fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007300000006410000010f0000009d00fffffffb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000146000001190000000000000000fb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e100000197000000030000075000000039fc0100000002fb0000000800540069006d0065010000000000000750000003bc00fffffffb0000000800540069006d00650100000000000004500000000000000000000005570000035f00000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd0000000400000000000001f3000003d7fc020000000cfb0000001200530065006c0065006300740069006f006e000000003d000000770000005c00fffffffb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c006100790073010000003d000003d7000000c900fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261fb000000280020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000000000000000fb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e006700000001ff0000019d0000017d00fffffffb000000280020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000000000000000fb00000044004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000001600000016fb0000004200410072006d005400720061006a006500630074006f007200790020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff000000160000001600000001000001e20000035ffc0200000003fc0000003d0000035f0000000000fffffffaffffffff0100000002fb0000000a005600690065007700730000000000ffffffff0000010000fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007300000006410000010f0000009d00fffffffb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000146000001190000000000000000fb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e100000197000000030000075000000039fc0100000002fb0000000800540069006d0065010000000000000750000003bc00fffffffb0000000800540069006d0065010000000000000450000000000000000000000557000003d700000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Selection:
     collapsed: false
   Time:
