@@ -7,7 +7,8 @@
   <arg name="base_local_planner" default="teb_local_planner/TebLocalPlannerROS" />
   <arg name="rviz" default="false"/>
   <arg name="use_namespace" default="true" />
-  <arg name="robot_name" default="kmriiwa" />
+  <!--<arg name="robot_name" default="kmriiwa" />-->
+  <arg name="robot_name" default="kmr" />
 
   <group ns="$(eval robot_name if use_namespace == 1 else '/')">
     <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />

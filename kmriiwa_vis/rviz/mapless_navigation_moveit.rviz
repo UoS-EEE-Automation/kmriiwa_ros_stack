@@ -82,7 +82,7 @@ Visualization Manager:
       Size (Pixels): 3
       Size (m): 0.05000000074505806
       Style: Points
-      Topic: /kmriiwa/merged_cloud
+      Topic: /kmr/merged_cloud
       Unreliable: false
       Use Fixed Frame: true
       Use rainbow: true
@@ -93,7 +93,7 @@ Visualization Manager:
       Enabled: true
       Name: Robot
       Queue Size: 10
-      Topic: /kmriiwa/move_base/global_costmap/footprint
+      Topic: /kmr/move_base/global_costmap/footprint
       Unreliable: false
       Value: true
     - Alpha: 0.699999988079071
@@ -112,7 +112,7 @@ Visualization Manager:
       Draw Behind: true
       Enabled: true
       Name: InflatedObstacles
-      Topic: /kmriiwa/move_base/local_costmap/costmap
+      Topic: /kmr/move_base/local_costmap/costmap
       Unreliable: false
       Use Timestamp: false
       Value: true
@@ -137,7 +137,7 @@ Visualization Manager:
       Radius: 0.029999999329447746
       Shaft Diameter: 0.10000000149011612
       Shaft Length: 0.10000000149011612
-      Topic: /kmriiwa/move_base/TebLocalPlannerROS/global_plan
+      Topic: /kmr/move_base/TebLocalPlannerROS/global_plan
       Unreliable: false
       Value: true
     - Alpha: 1
@@ -161,7 +161,7 @@ Visualization Manager:
       Radius: 0.029999999329447746
       Shaft Diameter: 0.10000000149011612
       Shaft Length: 0.10000000149011612
-      Topic: /kmriiwa/move_base/TebLocalPlannerROS/local_plan
+      Topic: /kmr/move_base/TebLocalPlannerROS/local_plan
       Unreliable: false
       Value: true
     - Alpha: 1
@@ -185,7 +185,7 @@ Visualization Manager:
       Radius: 0.029999999329447746
       Shaft Diameter: 0.10000000149011612
       Shaft Length: 0.10000000149011612
-      Topic: /kmriiwa/move_base/TebLocalPlannerROS/local_plan
+      Topic: /kmr/move_base/TebLocalPlannerROS/local_plan
       Unreliable: false
       Value: true
     - Alpha: 1
@@ -201,7 +201,7 @@ Visualization Manager:
       Shaft Length: 1
       Shaft Radius: 0.05000000074505806
       Shape: Arrow
-      Topic: /kmriiwa/move_base/current_goal
+      Topic: /kmr/move_base/current_goal
       Unreliable: false
       Value: true
     - Alpha: 1
@@ -218,7 +218,7 @@ Visualization Manager:
       Shaft Length: 0.23000000417232513
       Shaft Radius: 0.009999999776482582
       Shape: Arrow (Flat)
-      Topic: /kmriiwa/move_base/TebLocalPlannerROS/teb_poses
+      Topic: /kmr/move_base/TebLocalPlannerROS/teb_poses
       Unreliable: false
       Value: true
     - Alpha: 0.800000011920929
@@ -231,100 +231,100 @@ Visualization Manager:
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
-        kmriiwa_back_left_wheel_link:
+        kmr_back_left_wheel_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        kmriiwa_back_right_wheel_link:
+        kmr_back_right_wheel_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        kmriiwa_base_footprint:
+        kmr_base_footprint:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-        kmriiwa_base_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        kmriiwa_base_top_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        kmriiwa_front_left_wheel_link:
+        kmr_base_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        kmriiwa_front_right_wheel_link:
+        kmr_base_top_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        kmr_front_left_wheel_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        kmriiwa_laser_B1_link:
+        kmr_front_right_wheel_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        kmriiwa_laser_B4_link:
+        kmr_laser_B1_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        kmriiwa_link_0:
+        kmr_laser_B4_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        kmriiwa_link_1:
+        iiwa_link_0:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        kmriiwa_link_2:
+        iiwa_link_1:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        kmriiwa_link_3:
+        iiwa_link_2:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        kmriiwa_link_4:
+        iiwa_link_3:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        kmriiwa_link_5:
+        iiwa_link_4:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        kmriiwa_link_6:
+        iiwa_link_5:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        kmriiwa_link_7:
+        iiwa_link_6:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        kmriiwa_link_ee:
+        iiwa_link_7:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-        kmriiwa_riser_flange_link:
+          Value: true
+        iiwa_link_ee:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        iiwa_riser_flange_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
       Name: RobotModel
-      Robot Description: /kmriiwa/robot_description
+      Robot Description: /robot_description
       TF Prefix: ""
       Update Interval: 0
       Value: true
@@ -332,7 +332,7 @@ Visualization Manager:
     - Acceleration_Scaling_Factor: 0.1
       Class: moveit_rviz_plugin/MotionPlanning
       Enabled: false
-      Move Group Namespace: kmriiwa
+      Move Group Namespace: iiwa
       MoveIt_Allow_Approximate_IK: false
       MoveIt_Allow_External_Program: false
       MoveIt_Allow_Replanning: false
@@ -383,14 +383,14 @@ Visualization Manager:
         Goal State Color: 250; 128; 0
         Interactive Marker Size: 0
         Joint Violation Color: 255; 0; 255
-        Planning Group: kmriiwa_manipulator
+        Planning Group: ""
         Query Goal State: true
         Query Start State: false
         Show Workspace: false
         Start State Alpha: 1
         Start State Color: 0; 255; 0
-      Planning Scene Topic: /kmriiwa/move_group/monitored_planning_scene
-      Robot Description: kmriiwa/robot_description
+      Planning Scene Topic: move_group/monitored_planning_scene
+      Robot Description: robot_description
       Scene Geometry:
         Scene Alpha: 0.8999999761581421
         Scene Color: 50; 230; 50
@@ -421,94 +421,94 @@ Visualization Manager:
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
-        kmriiwa_back_left_wheel_link:
+        kmr_back_left_wheel_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        kmriiwa_back_right_wheel_link:
+        kmr_back_right_wheel_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        kmriiwa_base_footprint:
+        kmr_base_footprint:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-        kmriiwa_base_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        kmriiwa_base_top_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        kmriiwa_front_left_wheel_link:
+        kmr_base_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        kmriiwa_front_right_wheel_link:
+        kmr_base_top_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        kmr_front_left_wheel_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        kmriiwa_laser_B1_link:
+        kmr_front_right_wheel_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        kmriiwa_laser_B4_link:
+        kmr_laser_B1_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        kmriiwa_link_0:
+        kmr_laser_B4_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        kmriiwa_link_1:
+        iiwa_link_0:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        kmriiwa_link_2:
+        iiwa_link_1:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        kmriiwa_link_3:
+        iiwa_link_2:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        kmriiwa_link_4:
+        iiwa_link_3:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        kmriiwa_link_5:
+        iiwa_link_4:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        kmriiwa_link_6:
+        iiwa_link_5:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        kmriiwa_link_7:
+        iiwa_link_6:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        kmriiwa_link_ee:
+        iiwa_link_7:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-        kmriiwa_riser_flange_link:
+          Value: true
+        iiwa_link_ee:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        iiwa_riser_flange_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -517,13 +517,13 @@ Visualization Manager:
       Name: ArmTrajectory
       Robot Alpha: 0.30000001192092896
       Robot Color: 150; 50; 150
-      Robot Description: kmriiwa/robot_description
+      Robot Description: robot_description
       Show Robot Collision: false
       Show Robot Visual: true
       Show Trail: false
       State Display Time: 0.05 s
       Trail Step Size: 1
-      Trajectory Topic: /kmriiwa/move_group/display_planned_path
+      Trajectory Topic: /move_group/display_planned_path
       Use Sim Time: false
       Value: false
     - Class: rviz/TF
@@ -539,31 +539,31 @@ Visualization Manager:
           Value: true
         front_laser:
           Value: true
-        kmriiwa_back_left_wheel_link:
+        kmr_back_left_wheel_link:
           Value: true
-        kmriiwa_back_right_wheel_link:
+        kmr_back_right_wheel_link:
           Value: true
-        kmriiwa_base_footprint:
+        kmr_base_footprint:
           Value: true
-        kmriiwa_base_link:
+        kmr_base_link:
           Value: true
-        kmriiwa_base_top_link:
+        kmr_base_top_link:
           Value: true
-        kmriiwa_front_left_wheel_link:
+        kmr_front_left_wheel_link:
           Value: true
-        kmriiwa_front_right_wheel_link:
+        kmr_front_right_wheel_link:
           Value: true
-        kmriiwa_laser_B1_link:
+        kmr_laser_B1_link:
           Value: true
-        kmriiwa_laser_B4_link:
+        kmr_laser_B4_link:
           Value: true
-        kmriiwa_link_0:
+        iiwa_link_0:
           Value: true
-        kmriiwa_link_7:
+        iiwa_link_7:
           Value: true
-        kmriiwa_link_ee:
+        iiwa_link_ee:
           Value: true
-        kmriiwa_riser_flange_link:
+        iiwa_riser_flange_link:
           Value: true
         odom:
           Value: true
@@ -574,8 +574,8 @@ Visualization Manager:
       Show Axes: true
       Show Names: true
       Tree:
-        kmriiwa_link_7:
-          kmriiwa_link_ee:
+        iiwa_link_7:
+          iiwa_link_ee:
             {}
         odom:
           base_link:
@@ -583,23 +583,23 @@ Visualization Manager:
               {}
             front_laser:
               {}
-            kmriiwa_base_footprint:
-              kmriiwa_base_link:
-                kmriiwa_back_left_wheel_link:
+            kmr_base_footprint:
+              kmr_base_link:
+                kmr_back_left_wheel_link:
                   {}
-                kmriiwa_back_right_wheel_link:
+                kmr_back_right_wheel_link:
                   {}
-                kmriiwa_base_top_link:
-                  kmriiwa_riser_flange_link:
-                    kmriiwa_link_0:
+                kmr_base_top_link:
+                  iiwa_riser_flange_link:
+                    iiwa_link_0:
                       {}
-                kmriiwa_front_left_wheel_link:
+                kmr_front_left_wheel_link:
                   {}
-                kmriiwa_front_right_wheel_link:
+                kmr_front_right_wheel_link:
                   {}
-                kmriiwa_laser_B1_link:
+                kmr_laser_B1_link:
                   {}
-                kmriiwa_laser_B4_link:
+                kmr_laser_B4_link:
                   {}
       Update Interval: 0
       Value: true
@@ -623,7 +623,7 @@ Visualization Manager:
       X std deviation: 0.5
       Y std deviation: 0.5
     - Class: rviz/SetGoal
-      Topic: /kmriiwa/move_base_simple/goal
+      Topic: /kmr/move_base_simple/goal
     - Class: rviz/PublishPoint
       Single click: true
       Topic: /clicked_point
@@ -648,7 +648,7 @@ Visualization Manager:
       Name: Current View
       Near Clip Distance: 0.009999999776482582
       Pitch: 0.800000011920929
-      Target Frame: kmriiwa_base_link
+      Target Frame: kmr_base_link
       Yaw: 3.140000104904175
     Saved:
       - Angle: 0
