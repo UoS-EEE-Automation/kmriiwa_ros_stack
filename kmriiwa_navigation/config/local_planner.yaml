@@ -1,4 +1,4 @@
-controller_frequency: 15.0
+controller_frequency: 10.0 # 15
 recovery_behaviour_enabled: true
 
 TebLocalPlannerROS:
@@ -19,13 +19,13 @@ TebLocalPlannerROS:
     
   # Robot
          
-  max_vel_x: 0.05 # 0.07
-  max_vel_x_backwards: 0.05 # 0.07
-  max_vel_theta: 0.05 # 0.07
+  max_vel_x: 0.1 # 0.05 # 0.07
+  max_vel_x_backwards: 0.1 # 0.05 # 0.07
+  max_vel_theta: 0.1 # 0.07
   acc_lim_x: 0.015 # 0.025
   acc_lim_theta: 0.01 # 0.025
   min_turning_radius: 0.0
-  max_vel_y: 0.05 # 0.04
+  max_vel_y: 0.1 # 0.05 # 0.04
   acc_lim_y: 0.015
   use_proportional_saturation: True
   footprint_model: # types: "point", "circular", "two_circles", "line", "polygon"
@@ -34,8 +34,8 @@ TebLocalPlannerROS:
 
   # GoalTolerance
     
-  xy_goal_tolerance: 0.01 # 0.001
-  yaw_goal_tolerance: 0.01 # 0.001
+  xy_goal_tolerance: 0.003 # 0.02 0.01 0.001
+  yaw_goal_tolerance: 0.015 # 0.02 0.001
   free_goal_vel: False
     
   # Obstacles

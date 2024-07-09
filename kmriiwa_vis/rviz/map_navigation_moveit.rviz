@@ -3,9 +3,8 @@ Panels:
     Help Height: 0
     Name: Displays
     Property Tree Widget:
-      Expanded:
-        - /NDT Tool Poses1
-      Splitter Ratio: 0.4039517045021057
+      Expanded: ~
+      Splitter Ratio: 0.605042040348053
     Tree Height: 419
   - Class: rviz/Selection
     Name: Selection
@@ -275,7 +274,7 @@ Visualization Manager:
       Color: 255; 255; 255
       Color Transformer: Intensity
       Decay Time: 0
-      Enabled: true
+      Enabled: false
       Invert Rainbow: false
       Max Color: 255; 255; 255
       Min Color: 0; 0; 0
@@ -290,7 +289,7 @@ Visualization Manager:
       Unreliable: false
       Use Fixed Frame: true
       Use rainbow: true
-      Value: true
+      Value: false
     - Alpha: 1
       Arrow Length: 0.30000001192092896
       Axes Length: 0.30000001192092896
@@ -469,6 +468,7 @@ Visualization Manager:
     - Acceleration_Scaling_Factor: 0.1
       Class: moveit_rviz_plugin/MotionPlanning
       Enabled: false
+      JointsTab_Use_Radians: true
       Move Group Namespace: iiwa
       MoveIt_Allow_Approximate_IK: false
       MoveIt_Allow_External_Program: false
@@ -715,23 +715,10 @@ Visualization Manager:
       Value: false
     - Alpha: 1
       Class: rviz/Effort
-      Enabled: true
+      Enabled: false
       History Length: 1
       Joints:
-        iiwa_joint_1:
-          Value: true
-        iiwa_joint_2:
-          Value: true
-        iiwa_joint_3:
-          Value: true
-        iiwa_joint_4:
-          Value: true
-        iiwa_joint_5:
-          Value: true
-        iiwa_joint_6:
-          Value: true
-        iiwa_joint_7:
-          Value: true
+        {}
       Name: Effort
       Queue Size: 10
       Robot Description: robot_description
@@ -739,7 +726,7 @@ Visualization Manager:
       TF Prefix: ""
       Topic: /iiwa/joint_states
       Unreliable: false
-      Value: true
+      Value: false
       Width: 0.019999999552965164
     - Class: rviz/TF
       Enabled: true
@@ -747,7 +734,7 @@ Visualization Manager:
       Filter (whitelist): ""
       Frame Timeout: 15
       Frames:
-        All Enabled: true
+        All Enabled: false
         back_laser:
           Value: true
         base_link:
@@ -763,12 +750,6 @@ Visualization Manager:
         fixture_1_scanning_loc:
           Value: true
         fixture_1_z_up:
-          Value: true
-        fixture_2:
-          Value: true
-        fixture_2_scanning_loc:
-          Value: true
-        fixture_2_z_up:
           Value: true
         front_laser:
           Value: true
@@ -821,36 +802,32 @@ Visualization Manager:
         rs_camera_1_aligned_depth_to_color_frame:
           Value: true
         rs_camera_1_bottom_screw_frame:
-          Value: true
+          Value: false
         rs_camera_1_color_frame:
-          Value: true
+          Value: false
         rs_camera_1_color_optical_frame:
           Value: true
         rs_camera_1_depth_frame:
-          Value: true
+          Value: false
         rs_camera_1_depth_optical_frame:
-          Value: true
+          Value: false
         rs_camera_1_infra1_frame:
-          Value: true
+          Value: false
         rs_camera_1_infra1_optical_frame:
-          Value: true
+          Value: false
         rs_camera_1_infra2_frame:
-          Value: true
+          Value: false
         rs_camera_1_infra2_optical_frame:
-          Value: true
+          Value: false
         rs_camera_1_link:
-          Value: true
+          Value: false
       Marker Alpha: 1
       Marker Scale: 0.5
       Name: TF
       Show Arrows: true
       Show Axes: true
-      Show Names: true
+      Show Names: false
       Tree:
-        fixture_2:
-          fixture_2_z_up:
-            fixture_2_scanning_loc:
-              {}
         map:
           fixture_1:
             fixture_1_z_up:
@@ -993,7 +970,7 @@ Visualization Manager:
       Color: 255; 0; 255
       Color Transformer: RGB8
       Decay Time: 0
-      Enabled: true
+      Enabled: false
       Invert Rainbow: false
       Max Color: 255; 255; 255
       Min Color: 0; 0; 0
@@ -1008,7 +985,7 @@ Visualization Manager:
       Unreliable: false
       Use Fixed Frame: true
       Use rainbow: true
-      Value: true
+      Value: false
     - Alpha: 1
       Autocompute Intensity Bounds: true
       Autocompute Value Bounds:
@@ -1038,13 +1015,13 @@ Visualization Manager:
       Use rainbow: true
       Value: false
     - Class: rviz/Marker
-      Enabled: true
+      Enabled: false
       Marker Topic: /rs_camera_1/cropbox_marker
       Name: Crop Box Marker
       Namespaces:
-        "": true
+        {}
       Queue Size: 100
-      Value: true
+      Value: false
     - Class: rviz/Image
       Enabled: true
       Image Topic: /tag_detections_image
@@ -1058,11 +1035,19 @@ Visualization Manager:
       Unreliable: false
       Value: true
     - Class: rviz/Marker
-      Enabled: true
-      Marker Topic: /view_planner/reachability_sphere
+      Enabled: false
+      Marker Topic: /reachability/reachability_sphere
       Name: Reach
       Namespaces:
-        "": true
+        {}
+      Queue Size: 100
+      Value: false
+    - Class: rviz/Marker
+      Enabled: true
+      Marker Topic: /noether_client/input_mesh_marker
+      Name: Specimen Mesh
+      Namespaces:
+        input_mesh: true
       Queue Size: 100
       Value: true
     - Alpha: 1
@@ -1071,40 +1056,268 @@ Visualization Manager:
       Axes Radius: 0.009999999776482582
       Class: rviz/PoseArray
       Color: 255; 25; 0
-      Enabled: true
+      Enabled: false
       Head Length: 0.07000000029802322
       Head Radius: 0.029999999329447746
-      Name: View Plan
+      Name: view_plan
       Queue Size: 10
       Shaft Length: 0.23000000417232513
       Shaft Radius: 0.009999999776482582
       Shape: Axes
       Topic: /view_planner/planned_views
       Unreliable: false
-      Value: true
-    - Class: rviz/Marker
-      Enabled: true
-      Marker Topic: /input_mesh_marker
-      Name: Specimen Mesh
-      Namespaces:
-        input_mesh: true
-      Queue Size: 100
-      Value: true
+      Value: false
     - Alpha: 1
       Arrow Length: 0.30000001192092896
       Axes Length: 0.009999999776482582
       Axes Radius: 0.0020000000949949026
       Class: rviz/PoseArray
       Color: 255; 25; 0
-      Enabled: true
+      Enabled: false
       Head Length: 0.07000000029802322
       Head Radius: 0.029999999329447746
-      Name: NDT Tool Poses
+      Name: ndt_plan
       Queue Size: 10
       Shaft Length: 0.23000000417232513
       Shaft Radius: 0.009999999776482582
       Shape: Axes
-      Topic: /tool_poses
+      Topic: /noether_client/tool_poses
+      Unreliable: false
+      Value: false
+    - Alpha: 1
+      Arrow Length: 0.05000000074505806
+      Axes Length: 0.30000001192092896
+      Axes Radius: 0.009999999776482582
+      Class: rviz/PoseArray
+      Color: 255; 25; 0
+      Enabled: false
+      Head Length: 0.07000000029802322
+      Head Radius: 0.029999999329447746
+      Name: /noether_client/tool_pass_approach_000
+      Queue Size: 10
+      Shaft Length: 0.23000000417232513
+      Shaft Radius: 0.009999999776482582
+      Shape: Arrow (Flat)
+      Topic: /noether_client/tool_pass_approach_000
+      Unreliable: false
+      Value: false
+    - Alpha: 1
+      Arrow Length: 0.05000000074505806
+      Axes Length: 0.30000001192092896
+      Axes Radius: 0.009999999776482582
+      Class: rviz/PoseArray
+      Color: 0; 0; 0
+      Enabled: false
+      Head Length: 0.07000000029802322
+      Head Radius: 0.029999999329447746
+      Name: /noether_client/tool_pass_contact_000
+      Queue Size: 10
+      Shaft Length: 0.23000000417232513
+      Shaft Radius: 0.009999999776482582
+      Shape: Arrow (Flat)
+      Topic: /noether_client/tool_pass_contact_000
+      Unreliable: false
+      Value: false
+    - Alpha: 1
+      Arrow Length: 0.05000000074505806
+      Axes Length: 0.30000001192092896
+      Axes Radius: 0.009999999776482582
+      Class: rviz/PoseArray
+      Color: 115; 210; 22
+      Enabled: false
+      Head Length: 0.07000000029802322
+      Head Radius: 0.029999999329447746
+      Name: /noether_client/tool_pass_leave_000
+      Queue Size: 10
+      Shaft Length: 0.23000000417232513
+      Shaft Radius: 0.009999999776482582
+      Shape: Arrow (Flat)
+      Topic: /noether_client/tool_pass_leave_000
+      Unreliable: false
+      Value: false
+    - Alpha: 1
+      Arrow Length: 0.05000000074505806
+      Axes Length: 0.30000001192092896
+      Axes Radius: 0.009999999776482582
+      Class: rviz/PoseArray
+      Color: 255; 25; 0
+      Enabled: true
+      Head Length: 0.07000000029802322
+      Head Radius: 0.029999999329447746
+      Name: /noether_client/tool_pass_approach_001
+      Queue Size: 10
+      Shaft Length: 0.23000000417232513
+      Shaft Radius: 0.009999999776482582
+      Shape: Arrow (Flat)
+      Topic: /noether_client/tool_pass_approach_001
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Arrow Length: 0.05000000074505806
+      Axes Length: 0.30000001192092896
+      Axes Radius: 0.009999999776482582
+      Class: rviz/PoseArray
+      Color: 0; 0; 0
+      Enabled: true
+      Head Length: 0.07000000029802322
+      Head Radius: 0.029999999329447746
+      Name: /noether_client/tool_pass_contact_001
+      Queue Size: 10
+      Shaft Length: 0.23000000417232513
+      Shaft Radius: 0.009999999776482582
+      Shape: Arrow (Flat)
+      Topic: /noether_client/tool_pass_contact_001
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Arrow Length: 0.05000000074505806
+      Axes Length: 0.30000001192092896
+      Axes Radius: 0.009999999776482582
+      Class: rviz/PoseArray
+      Color: 115; 210; 22
+      Enabled: true
+      Head Length: 0.07000000029802322
+      Head Radius: 0.029999999329447746
+      Name: /noether_client/tool_pass_leave_001
+      Queue Size: 10
+      Shaft Length: 0.23000000417232513
+      Shaft Radius: 0.009999999776482582
+      Shape: Arrow (Flat)
+      Topic: /noether_client/tool_pass_leave_001
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Axes Length: 0.10000000149011612
+      Axes Radius: 0.009999999776482582
+      Class: rviz/Pose
+      Color: 255; 25; 0
+      Enabled: false
+      Head Length: 0.30000001192092896
+      Head Radius: 0.10000000149011612
+      Name: /view_planner/ndt_approach_base_location_002
+      Queue Size: 10
+      Shaft Length: 1
+      Shaft Radius: 0.05000000074505806
+      Shape: Axes
+      Topic: /view_planner/ndt_leave_base_location_002
+      Unreliable: false
+      Value: false
+    - Alpha: 1
+      Axes Length: 0.10000000149011612
+      Axes Radius: 0.009999999776482582
+      Class: rviz/Pose
+      Color: 255; 25; 0
+      Enabled: false
+      Head Length: 0.30000001192092896
+      Head Radius: 0.10000000149011612
+      Name: /view_planner/ndt_leave_base_location_002
+      Queue Size: 10
+      Shaft Length: 1
+      Shaft Radius: 0.05000000074505806
+      Shape: Axes
+      Topic: /view_planner/ndt_approach_base_location_002
+      Unreliable: false
+      Value: false
+    - Alpha: 1
+      Arrow Length: 0.05000000074505806
+      Axes Length: 0.30000001192092896
+      Axes Radius: 0.009999999776482582
+      Class: rviz/PoseArray
+      Color: 255; 25; 0
+      Enabled: true
+      Head Length: 0.07000000029802322
+      Head Radius: 0.029999999329447746
+      Name: /noether_client/tool_pass_approach_002
+      Queue Size: 10
+      Shaft Length: 0.23000000417232513
+      Shaft Radius: 0.009999999776482582
+      Shape: Arrow (Flat)
+      Topic: /noether_client/tool_pass_approach_002
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Arrow Length: 0.05000000074505806
+      Axes Length: 0.30000001192092896
+      Axes Radius: 0.009999999776482582
+      Class: rviz/PoseArray
+      Color: 0; 0; 0
+      Enabled: true
+      Head Length: 0.07000000029802322
+      Head Radius: 0.029999999329447746
+      Name: /noether_client/tool_pass_contact_002
+      Queue Size: 10
+      Shaft Length: 0.23000000417232513
+      Shaft Radius: 0.009999999776482582
+      Shape: Arrow (Flat)
+      Topic: /noether_client/tool_pass_contact_002
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Arrow Length: 0.05000000074505806
+      Axes Length: 0.30000001192092896
+      Axes Radius: 0.009999999776482582
+      Class: rviz/PoseArray
+      Color: 115; 210; 22
+      Enabled: true
+      Head Length: 0.07000000029802322
+      Head Radius: 0.029999999329447746
+      Name: /noether_client/tool_pass_leave_002
+      Queue Size: 10
+      Shaft Length: 0.23000000417232513
+      Shaft Radius: 0.009999999776482582
+      Shape: Arrow (Flat)
+      Topic: /noether_client/tool_pass_leave_002
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Arrow Length: 0.05000000074505806
+      Axes Length: 0.30000001192092896
+      Axes Radius: 0.009999999776482582
+      Class: rviz/PoseArray
+      Color: 255; 25; 0
+      Enabled: true
+      Head Length: 0.07000000029802322
+      Head Radius: 0.029999999329447746
+      Name: /noether_client/tool_pass_approach_003
+      Queue Size: 10
+      Shaft Length: 0.23000000417232513
+      Shaft Radius: 0.009999999776482582
+      Shape: Arrow (Flat)
+      Topic: /noether_client/tool_pass_approach_003
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Arrow Length: 0.05000000074505806
+      Axes Length: 0.30000001192092896
+      Axes Radius: 0.009999999776482582
+      Class: rviz/PoseArray
+      Color: 0; 0; 0
+      Enabled: true
+      Head Length: 0.07000000029802322
+      Head Radius: 0.029999999329447746
+      Name: /noether_client/tool_pass_contact_003
+      Queue Size: 10
+      Shaft Length: 0.23000000417232513
+      Shaft Radius: 0.009999999776482582
+      Shape: Arrow (Flat)
+      Topic: /noether_client/tool_pass_contact_003
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Arrow Length: 0.05000000074505806
+      Axes Length: 0.30000001192092896
+      Axes Radius: 0.009999999776482582
+      Class: rviz/PoseArray
+      Color: 115; 210; 22
+      Enabled: true
+      Head Length: 0.07000000029802322
+      Head Radius: 0.029999999329447746
+      Name: /noether_client/tool_pass_leave_003
+      Queue Size: 10
+      Shaft Length: 0.23000000417232513
+      Shaft Radius: 0.009999999776482582
+      Shape: Arrow (Flat)
+      Topic: /noether_client/tool_pass_leave_003
       Unreliable: false
       Value: true
   Enabled: true
@@ -1135,7 +1348,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/ThirdPersonFollower
-      Distance: 7.07412052154541
+      Distance: 7.414470195770264
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -1143,17 +1356,17 @@ Visualization Manager:
         Value: false
       Field of View: 0.8999999761581421
       Focal Point:
-        X: -0.9443471431732178
-        Y: -0.8673281669616699
-        Z: 1.1920928955078125e-06
+        X: -1.06318998336792
+        Y: 0.8031759262084961
+        Z: -1.7881393432617188e-06
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.6897969841957092
+      Pitch: 0.12979748845100403
       Target Frame: kmriiwa_base_link
-      Yaw: 4.948277473449707
+      Yaw: 4.4083662033081055
     Saved:
       - Angle: 0
         Class: rviz/TopDownOrtho
