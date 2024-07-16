@@ -23,7 +23,7 @@ Panels:
   - Class: rviz/Time
     Name: Time
     SyncMode: 0
-    SyncSource: PointCloud
+    SyncSource: ""
 Preferences:
   PromptSaveOnExit: true
 Toolbars:
@@ -739,17 +739,9 @@ Visualization Manager:
           Value: true
         base_link:
           Value: true
-        bundle_1:
-          Value: true
         dummy_ut_probe_base_link:
           Value: true
         dummy_ut_probe_contact_frame:
-          Value: true
-        fixture_1:
-          Value: true
-        fixture_1_scanning_loc:
-          Value: true
-        fixture_1_z_up:
           Value: true
         front_laser:
           Value: true
@@ -791,15 +783,7 @@ Visualization Manager:
           Value: true
         kmr_riser_flange_link:
           Value: true
-        map:
-          Value: true
-        odom:
-          Value: true
-        pcl_crop_box_1:
-          Value: true
         reach:
-          Value: true
-        rs_camera_1_aligned_depth_to_color_frame:
           Value: true
         rs_camera_1_bottom_screw_frame:
           Value: false
@@ -828,66 +812,55 @@ Visualization Manager:
       Show Axes: true
       Show Names: false
       Tree:
-        map:
-          fixture_1:
-            fixture_1_z_up:
-              fixture_1_scanning_loc:
+        base_link:
+          back_laser:
+            {}
+          front_laser:
+            {}
+          kmr_base_footprint:
+            kmr_base_link:
+              kmr_back_left_wheel_link:
                 {}
-            pcl_crop_box_1:
-              {}
-          odom:
-            base_link:
-              back_laser:
+              kmr_back_right_wheel_link:
                 {}
-              front_laser:
+              kmr_base_top_link:
+                kmr_riser_flange_link:
+                  iiwa_link_0:
+                    iiwa_link_1:
+                      iiwa_link_2:
+                        iiwa_link_3:
+                          iiwa_link_4:
+                            iiwa_link_5:
+                              iiwa_link_6:
+                                iiwa_link_7:
+                                  iiwa_link_ee:
+                                    dummy_ut_probe_base_link:
+                                      dummy_ut_probe_contact_frame:
+                                        {}
+                                      rs_camera_1_bottom_screw_frame:
+                                        rs_camera_1_link:
+                                          rs_camera_1_color_frame:
+                                            rs_camera_1_color_optical_frame:
+                                              {}
+                                          rs_camera_1_depth_frame:
+                                            rs_camera_1_depth_optical_frame:
+                                              {}
+                                          rs_camera_1_infra1_frame:
+                                            rs_camera_1_infra1_optical_frame:
+                                              {}
+                                          rs_camera_1_infra2_frame:
+                                            rs_camera_1_infra2_optical_frame:
+                                              {}
+                      reach:
+                        {}
+              kmr_front_left_wheel_link:
                 {}
-              kmr_base_footprint:
-                kmr_base_link:
-                  kmr_back_left_wheel_link:
-                    {}
-                  kmr_back_right_wheel_link:
-                    {}
-                  kmr_base_top_link:
-                    kmr_riser_flange_link:
-                      iiwa_link_0:
-                        iiwa_link_1:
-                          iiwa_link_2:
-                            iiwa_link_3:
-                              iiwa_link_4:
-                                iiwa_link_5:
-                                  iiwa_link_6:
-                                    iiwa_link_7:
-                                      iiwa_link_ee:
-                                        dummy_ut_probe_base_link:
-                                          dummy_ut_probe_contact_frame:
-                                            {}
-                                          rs_camera_1_bottom_screw_frame:
-                                            rs_camera_1_link:
-                                              rs_camera_1_aligned_depth_to_color_frame:
-                                                rs_camera_1_color_optical_frame:
-                                                  bundle_1:
-                                                    {}
-                                              rs_camera_1_color_frame:
-                                                {}
-                                              rs_camera_1_depth_frame:
-                                                rs_camera_1_depth_optical_frame:
-                                                  {}
-                                              rs_camera_1_infra1_frame:
-                                                rs_camera_1_infra1_optical_frame:
-                                                  {}
-                                              rs_camera_1_infra2_frame:
-                                                rs_camera_1_infra2_optical_frame:
-                                                  {}
-                          reach:
-                            {}
-                  kmr_front_left_wheel_link:
-                    {}
-                  kmr_front_right_wheel_link:
-                    {}
-                  kmr_laser_B1_link:
-                    {}
-                  kmr_laser_B4_link:
-                    {}
+              kmr_front_right_wheel_link:
+                {}
+              kmr_laser_B1_link:
+                {}
+              kmr_laser_B4_link:
+                {}
       Update Interval: 0
       Value: true
     - Class: rviz/Image
@@ -1047,7 +1020,7 @@ Visualization Manager:
       Marker Topic: /noether_client/input_mesh_marker
       Name: Specimen Mesh
       Namespaces:
-        input_mesh: true
+        {}
       Queue Size: 100
       Value: true
     - Alpha: 1
@@ -1348,7 +1321,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/ThirdPersonFollower
-      Distance: 7.414470195770264
+      Distance: 11.6668119430542
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -1356,17 +1329,17 @@ Visualization Manager:
         Value: false
       Field of View: 0.8999999761581421
       Focal Point:
-        X: -1.06318998336792
-        Y: 0.8031759262084961
+        X: -1.2862194776535034
+        Y: -0.6274285316467285
         Z: -1.7881393432617188e-06
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.12979748845100403
+      Pitch: 0.8397972583770752
       Target Frame: kmriiwa_base_link
-      Yaw: 4.4083662033081055
+      Yaw: 4.333365440368652
     Saved:
       - Angle: 0
         Class: rviz/TopDownOrtho
