@@ -3,9 +3,10 @@ Panels:
     Help Height: 0
     Name: Displays
     Property Tree Widget:
-      Expanded: ~
-      Splitter Ratio: 0.605042040348053
-    Tree Height: 419
+      Expanded:
+        - /TF1/Frames1
+      Splitter Ratio: 0.46194690465927124
+    Tree Height: 360
   - Class: rviz/Selection
     Name: Selection
   - Class: rviz/Tool Properties
@@ -317,12 +318,7 @@ Visualization Manager:
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
-        dummy_ut_probe_base_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        dummy_ut_probe_contact_frame:
+        ectane:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -418,6 +414,15 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        lf_ec_probe_base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        lf_ec_probe_contact_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
         rs_camera_1_bottom_screw_frame:
           Alpha: 1
           Show Axes: false
@@ -558,12 +563,7 @@ Visualization Manager:
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
-        dummy_ut_probe_base_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        dummy_ut_probe_contact_frame:
+        ectane:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -659,6 +659,15 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        lf_ec_probe_base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        lf_ec_probe_contact_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
         rs_camera_1_bottom_screw_frame:
           Alpha: 1
           Show Axes: false
@@ -739,9 +748,15 @@ Visualization Manager:
           Value: true
         base_link:
           Value: true
-        dummy_ut_probe_base_link:
+        bundle_1:
           Value: true
-        dummy_ut_probe_contact_frame:
+        ectane:
+          Value: true
+        fixture_1:
+          Value: true
+        fixture_1_scanning_loc:
+          Value: false
+        fixture_1_z_up:
           Value: true
         front_laser:
           Value: true
@@ -783,11 +798,19 @@ Visualization Manager:
           Value: true
         kmr_riser_flange_link:
           Value: true
+        lf_ec_probe_base_link:
+          Value: true
+        lf_ec_probe_contact_frame:
+          Value: true
         map:
           Value: true
         odom:
           Value: true
+        pcl_crop_box_1:
+          Value: true
         reach:
+          Value: true
+        rs_camera_1_aligned_depth_to_color_frame:
           Value: true
         rs_camera_1_bottom_screw_frame:
           Value: false
@@ -817,6 +840,12 @@ Visualization Manager:
       Show Names: false
       Tree:
         map:
+          fixture_1:
+            fixture_1_z_up:
+              fixture_1_scanning_loc:
+                {}
+            pcl_crop_box_1:
+              {}
           odom:
             base_link:
               back_laser:
@@ -840,14 +869,18 @@ Visualization Manager:
                                   iiwa_link_6:
                                     iiwa_link_7:
                                       iiwa_link_ee:
-                                        dummy_ut_probe_base_link:
-                                          dummy_ut_probe_contact_frame:
-                                            {}
+                                        lf_ec_probe_base_link:
+                                          lf_ec_probe_contact_frame:
+                                            ectane:
+                                              {}
                                           rs_camera_1_bottom_screw_frame:
                                             rs_camera_1_link:
-                                              rs_camera_1_color_frame:
+                                              rs_camera_1_aligned_depth_to_color_frame:
                                                 rs_camera_1_color_optical_frame:
-                                                  {}
+                                                  bundle_1:
+                                                    {}
+                                              rs_camera_1_color_frame:
+                                                {}
                                               rs_camera_1_depth_frame:
                                                 rs_camera_1_depth_optical_frame:
                                                   {}
@@ -919,7 +952,7 @@ Visualization Manager:
       Channel Name: intensity
       Class: rviz/PointCloud2
       Color: 255; 0; 0
-      Color Transformer: FlatColor
+      Color Transformer: RGB8
       Decay Time: 0
       Enabled: false
       Invert Rainbow: false
@@ -994,13 +1027,13 @@ Visualization Manager:
       Use rainbow: true
       Value: false
     - Class: rviz/Marker
-      Enabled: false
+      Enabled: true
       Marker Topic: /rs_camera_1/cropbox_marker
       Name: Crop Box Marker
       Namespaces:
-        {}
+        "": true
       Queue Size: 100
-      Value: false
+      Value: true
     - Class: rviz/Image
       Enabled: true
       Image Topic: /tag_detections_image
@@ -1022,20 +1055,20 @@ Visualization Manager:
       Queue Size: 100
       Value: false
     - Class: rviz/Marker
-      Enabled: true
+      Enabled: false
       Marker Topic: /noether_client/input_mesh_marker
       Name: Specimen Mesh
       Namespaces:
         {}
       Queue Size: 100
-      Value: true
+      Value: false
     - Alpha: 1
       Arrow Length: 0.30000001192092896
       Axes Length: 0.05000000074505806
       Axes Radius: 0.009999999776482582
       Class: rviz/PoseArray
       Color: 255; 25; 0
-      Enabled: false
+      Enabled: true
       Head Length: 0.07000000029802322
       Head Radius: 0.029999999329447746
       Name: view_plan
@@ -1045,7 +1078,7 @@ Visualization Manager:
       Shape: Axes
       Topic: /view_planner/planned_views
       Unreliable: false
-      Value: false
+      Value: true
     - Alpha: 1
       Arrow Length: 0.30000001192092896
       Axes Length: 0.009999999776482582
@@ -1299,6 +1332,66 @@ Visualization Manager:
       Topic: /noether_client/tool_pass_leave_003
       Unreliable: false
       Value: true
+    - Alpha: 1
+      Autocompute Intensity Bounds: false
+      Autocompute Value Bounds:
+        Max Value: 10
+        Min Value: -10
+        Value: true
+      Axis: Z
+      Channel Name: Imaginary
+      Class: rviz/PointCloud
+      Color: 255; 255; 255
+      Color Transformer: Intensity
+      Decay Time: 0
+      Enabled: true
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Max Intensity: 500
+      Min Color: 0; 0; 0
+      Min Intensity: -3200
+      Name: ec_axial_reconstruction
+      Position Transformer: XYZ
+      Queue Size: 10
+      Selectable: true
+      Size (Pixels): 3
+      Size (m): 0.0020000000949949026
+      Style: Flat Squares
+      Topic: /ectane/axial_reconstruction
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: true
+    - Alpha: 1
+      Autocompute Intensity Bounds: false
+      Autocompute Value Bounds:
+        Max Value: 10
+        Min Value: -10
+        Value: true
+      Axis: Z
+      Channel Name: Imaginary
+      Class: rviz/PointCloud
+      Color: 255; 255; 255
+      Color Transformer: Intensity
+      Decay Time: 0
+      Enabled: true
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Max Intensity: 500
+      Min Color: 0; 0; 0
+      Min Intensity: -3200
+      Name: ec_transversal_reconstruction
+      Position Transformer: XYZ
+      Queue Size: 10
+      Selectable: true
+      Size (Pixels): 3
+      Size (m): 0.0020000000949949026
+      Style: Flat Squares
+      Topic: /ectane/transversal_reconstruction
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -1327,7 +1420,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/ThirdPersonFollower
-      Distance: 6.700288772583008
+      Distance: 6.282087802886963
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -1335,17 +1428,17 @@ Visualization Manager:
         Value: false
       Field of View: 0.8999999761581421
       Focal Point:
-        X: -1.7295310497283936
-        Y: -0.909529447555542
-        Z: -7.152557373046875e-07
+        X: -1.442232608795166
+        Y: -1.2248977422714233
+        Z: -1.7869763269118266e-06
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.6797974109649658
+      Pitch: 0.9197981357574463
       Target Frame: kmriiwa_base_link
-      Yaw: 4.373378276824951
+      Yaw: 4.373420238494873
     Saved:
       - Angle: 0
         Class: rviz/TopDownOrtho
@@ -1366,14 +1459,14 @@ Window Geometry:
     collapsed: false
   Displays:
     collapsed: false
-  Height: 1136
+  Height: 1016
   Hide Left Dock: false
   Hide Right Dock: true
   MotionPlanning:
     collapsed: false
   MotionPlanning - Trajectory Slider:
     collapsed: false
-  QMainWindow State: 000000ff00000000fd0000000400000000000002cc000003d7fc020000000efb0000001200530065006c0065006300740069006f006e000000003d000000770000005c00fffffffb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c006100790073010000003d000001e0000000c900fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261fb000000280020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000000000000000fb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e006700000002770000019d0000017d00fffffffb000000280020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000000000000000fb00000044004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000001600000016fb0000004200410072006d005400720061006a006500630074006f007200790020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000001600000016fb00000018005200650061006c00530065006e007300650052004700420000000187000001370000001600fffffffb0000001c00540061006700200044006500740065006300740069006f006e00730100000223000001f10000001600ffffff00000001000001e20000035ffc0200000003fc0000003d0000035f0000000000fffffffaffffffff0100000002fb0000000a005600690065007700730000000000ffffffff0000010000fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007300000006410000010f0000009d00fffffffb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000146000001190000000000000000fb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e100000197000000030000075000000039fc0100000002fb0000000800540069006d0065010000000000000750000003bc00fffffffb0000000800540069006d006501000000000000045000000000000000000000047e000003d700000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd0000000400000000000002370000035ffc020000000efb0000001200530065006c0065006300740069006f006e000000003d000000770000005c00fffffffb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c006100790073010000003d000001a5000000c900fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261fb000000280020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000000000000000fb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e006700000002770000019d0000017d00fffffffb000000280020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000000000000000fb00000044004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000001600000016fb0000004200410072006d005400720061006a006500630074006f007200790020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000001600000016fb00000018005200650061006c00530065006e007300650052004700420000000187000001370000001600fffffffb0000001c00540061006700200044006500740065006300740069006f006e007301000001e8000001b40000001600ffffff00000001000001e20000035ffc0200000003fc0000003d0000035f0000000000fffffffaffffffff0100000002fb0000000a005600690065007700730000000000ffffffff0000010000fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007300000006410000010f0000009d00fffffffb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000146000001190000000000000000fb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e100000197000000030000075400000039fc0100000002fb0000000800540069006d0065010000000000000754000003bc00fffffffb0000000800540069006d00650100000000000004500000000000000000000005170000035f00000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   RealSenseRGB:
     collapsed: false
   Selection:
@@ -1386,6 +1479,6 @@ Window Geometry:
     collapsed: true
   Views:
     collapsed: true
-  Width: 1872
-  X: 48
+  Width: 1876
+  X: 44
   Y: 27
