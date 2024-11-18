@@ -1,4 +1,4 @@
-image: /home/matthew/Desktop/NMIS_accuracy_eval_area.pgm
+image: NMIS_accuracy_eval_area.pgm
 resolution: 0.050000
 origin: [-21.200000, -21.200000, 0.000000]
 negate: 0
