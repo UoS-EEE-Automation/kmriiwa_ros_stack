@@ -3,10 +3,9 @@ Panels:
     Help Height: 0
     Name: Displays
     Property Tree Widget:
-      Expanded:
-        - /TF1/Frames1
+      Expanded: ~
       Splitter Ratio: 0.6848248839378357
-    Tree Height: 922
+    Tree Height: 481
   - Class: rviz/Selection
     Name: Selection
   - Class: rviz/Tool Properties
@@ -25,7 +24,7 @@ Panels:
   - Class: rviz/Time
     Name: Time
     SyncMode: 0
-    SyncSource: PointCloud
+    SyncSource: Tag Detections
 Preferences:
   PromptSaveOnExit: true
 Toolbars:
@@ -73,7 +72,7 @@ Visualization Manager:
       Color: 255; 0; 0
       Color Transformer: FlatColor
       Decay Time: 0
-      Enabled: false
+      Enabled: true
       Invert Rainbow: false
       Max Color: 168; 4; 21
       Min Color: 0; 0; 0
@@ -88,7 +87,7 @@ Visualization Manager:
       Unreliable: false
       Use Fixed Frame: true
       Use rainbow: true
-      Value: false
+      Value: true
     - Alpha: 1
       Class: rviz/Polygon
       Color: 255; 0; 0
@@ -312,160 +311,18 @@ Visualization Manager:
     - Alpha: 0.800000011920929
       Class: rviz/RobotModel
       Collision Enabled: false
-      Enabled: true
+      Enabled: false
       Links:
         All Links Enabled: true
         Expand Joint Details: false
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
-        dummy_ut_probe_base_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        dummy_ut_probe_contact_frame:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        iiwa_link_0:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        iiwa_link_1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        iiwa_link_2:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        iiwa_link_3:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        iiwa_link_4:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        iiwa_link_5:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        iiwa_link_6:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        iiwa_link_7:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        iiwa_link_ee:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        kmr_back_left_wheel_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        kmr_back_right_wheel_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        kmr_base_footprint:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        kmr_base_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        kmr_base_top_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        kmr_front_left_wheel_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        kmr_front_right_wheel_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        kmr_laser_B1_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        kmr_laser_B4_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        kmr_riser_flange_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        rs_camera_1_bottom_screw_frame:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        rs_camera_1_color_frame:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        rs_camera_1_color_optical_frame:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        rs_camera_1_depth_frame:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        rs_camera_1_depth_optical_frame:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        rs_camera_1_infra1_frame:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        rs_camera_1_infra1_optical_frame:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        rs_camera_1_infra2_frame:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        rs_camera_1_infra2_optical_frame:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        rs_camera_1_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
       Name: RobotModel
       Robot Description: /robot_description
       TF Prefix: ""
       Update Interval: 0
-      Value: true
+      Value: false
       Visual Enabled: true
     - Acceleration_Scaling_Factor: 0.1
       Class: moveit_rviz_plugin/MotionPlanning
@@ -560,12 +417,16 @@ Visualization Manager:
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
-        dummy_ut_probe_base_link:
+        ee_mount_base_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        dummy_ut_probe_contact_frame:
+        ee_mount_contact_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        ee_mount_zivid_origin:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -661,47 +522,15 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        rs_camera_1_bottom_screw_frame:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        rs_camera_1_color_frame:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        rs_camera_1_color_optical_frame:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        rs_camera_1_depth_frame:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        rs_camera_1_depth_optical_frame:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        rs_camera_1_infra1_frame:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        rs_camera_1_infra1_optical_frame:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        rs_camera_1_infra2_frame:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        rs_camera_1_infra2_optical_frame:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        rs_camera_1_link:
+        zivid_base_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
+        zivid_optical_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
       Loop Animation: false
       Name: ArmTrajectory
       Robot Alpha: 0.30000001192092896
@@ -736,16 +565,18 @@ Visualization Manager:
       Filter (whitelist): ""
       Frame Timeout: 15
       Frames:
-        All Enabled: false
+        All Enabled: true
         back_laser:
           Value: true
         base_link:
           Value: true
         bundle_2:
           Value: true
-        dummy_ut_probe_base_link:
+        ee_mount_base_link:
           Value: true
-        dummy_ut_probe_contact_frame:
+        ee_mount_contact_frame:
+          Value: true
+        ee_mount_zivid_origin:
           Value: true
         fixture_2:
           Value: true
@@ -799,34 +630,16 @@ Visualization Manager:
           Value: true
         reach:
           Value: true
-        rs_camera_1_aligned_depth_to_color_frame:
+        zivid_base_link:
           Value: true
-        rs_camera_1_bottom_screw_frame:
-          Value: false
-        rs_camera_1_color_frame:
-          Value: false
-        rs_camera_1_color_optical_frame:
+        zivid_optical_frame:
           Value: true
-        rs_camera_1_depth_frame:
-          Value: false
-        rs_camera_1_depth_optical_frame:
-          Value: false
-        rs_camera_1_infra1_frame:
-          Value: false
-        rs_camera_1_infra1_optical_frame:
-          Value: false
-        rs_camera_1_infra2_frame:
-          Value: false
-        rs_camera_1_infra2_optical_frame:
-          Value: false
-        rs_camera_1_link:
-          Value: false
       Marker Alpha: 1
       Marker Scale: 0.5
       Name: TF
-      Show Arrows: false
+      Show Arrows: true
       Show Axes: true
-      Show Names: false
+      Show Names: true
       Tree:
         map:
           fixture_2:
@@ -857,25 +670,13 @@ Visualization Manager:
                                   iiwa_link_6:
                                     iiwa_link_7:
                                       iiwa_link_ee:
-                                        dummy_ut_probe_base_link:
-                                          dummy_ut_probe_contact_frame:
+                                        ee_mount_base_link:
+                                          ee_mount_contact_frame:
                                             {}
-                                          rs_camera_1_bottom_screw_frame:
-                                            rs_camera_1_link:
-                                              rs_camera_1_aligned_depth_to_color_frame:
-                                                rs_camera_1_color_optical_frame:
-                                                  bundle_2:
-                                                    {}
-                                              rs_camera_1_color_frame:
-                                                {}
-                                              rs_camera_1_depth_frame:
-                                                rs_camera_1_depth_optical_frame:
-                                                  {}
-                                              rs_camera_1_infra1_frame:
-                                                rs_camera_1_infra1_optical_frame:
-                                                  {}
-                                              rs_camera_1_infra2_frame:
-                                                rs_camera_1_infra2_optical_frame:
+                                          ee_mount_zivid_origin:
+                                            zivid_base_link:
+                                              zivid_optical_frame:
+                                                bundle_2:
                                                   {}
                           reach:
                             {}
@@ -895,7 +696,7 @@ Visualization Manager:
       Max Value: 1
       Median window: 5
       Min Value: 0
-      Name: RealSenseRGB
+      Name: RealSense/RGB
       Normalize Range: true
       Queue Size: 2
       Transport Hint: raw
@@ -917,7 +718,7 @@ Visualization Manager:
       Invert Rainbow: false
       Max Color: 255; 255; 255
       Min Color: 0; 0; 0
-      Name: RealSensePointCloud
+      Name: RealSense/PointCloud
       Position Transformer: XYZ
       Queue Size: 10
       Selectable: true
@@ -945,7 +746,7 @@ Visualization Manager:
       Invert Rainbow: false
       Max Color: 255; 255; 255
       Min Color: 0; 0; 0
-      Name: voxel_grid
+      Name: RealSense/voxel_grid
       Position Transformer: XYZ
       Queue Size: 10
       Selectable: true
@@ -956,6 +757,14 @@ Visualization Manager:
       Unreliable: false
       Use Fixed Frame: true
       Use rainbow: true
+      Value: false
+    - Class: rviz/Marker
+      Enabled: false
+      Marker Topic: /rs_camera_1/cropbox_marker
+      Name: RealSense/Crop Box Marker
+      Namespaces:
+        {}
+      Queue Size: 100
       Value: false
     - Alpha: 1
       Autocompute Intensity Bounds: true
@@ -973,7 +782,7 @@ Visualization Manager:
       Invert Rainbow: false
       Max Color: 255; 255; 255
       Min Color: 0; 0; 0
-      Name: crop_box
+      Name: RealSense/crop_box
       Position Transformer: XYZ
       Queue Size: 10
       Selectable: true
@@ -1001,7 +810,7 @@ Visualization Manager:
       Invert Rainbow: false
       Max Color: 255; 255; 255
       Min Color: 0; 0; 0
-      Name: outlier_removal
+      Name: RealSense/outlier_removal
       Position Transformer: XYZ
       Queue Size: 10
       Selectable: true
@@ -1013,16 +822,140 @@ Visualization Manager:
       Use Fixed Frame: true
       Use rainbow: true
       Value: false
+    - Class: rviz/Image
+      Enabled: false
+      Image Topic: /zivid_camera/color/image_color
+      Max Value: 1
+      Median window: 5
+      Min Value: 0
+      Name: Zivid/RGB
+      Normalize Range: true
+      Queue Size: 2
+      Transport Hint: raw
+      Unreliable: false
+      Value: false
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 10
+        Min Value: -10
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz/PointCloud2
+      Color: 255; 255; 255
+      Color Transformer: RGB8
+      Decay Time: 0
+      Enabled: false
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Min Color: 0; 0; 0
+      Name: Zivid/PointCloud
+      Position Transformer: XYZ
+      Queue Size: 10
+      Selectable: true
+      Size (Pixels): 3
+      Size (m): 0.009999999776482582
+      Style: Flat Squares
+      Topic: /zivid_camera/points/xyzrgba
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: false
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 10
+        Min Value: -10
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz/PointCloud2
+      Color: 255; 0; 0
+      Color Transformer: RGB8
+      Decay Time: 0
+      Enabled: false
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Min Color: 0; 0; 0
+      Name: Zivid/voxel_grid
+      Position Transformer: XYZ
+      Queue Size: 10
+      Selectable: true
+      Size (Pixels): 2
+      Size (m): 0.009999999776482582
+      Style: Points
+      Topic: /zivid_camera/voxel_grid/output
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: false
     - Class: rviz/Marker
       Enabled: true
-      Marker Topic: /rs_camera_1/cropbox_marker
-      Name: Crop Box Marker
+      Marker Topic: /zivid_camera/cropbox_marker
+      Name: Zivid/Crop Box Marker
       Namespaces:
         "": true
       Queue Size: 100
       Value: true
-    - Class: rviz/Image
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 10
+        Min Value: -10
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz/PointCloud2
+      Color: 255; 0; 255
+      Color Transformer: RGB8
+      Decay Time: 0
+      Enabled: true
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Min Color: 0; 0; 0
+      Name: Zivid/crop_box
+      Position Transformer: XYZ
+      Queue Size: 10
+      Selectable: true
+      Size (Pixels): 2
+      Size (m): 0.009999999776482582
+      Style: Points
+      Topic: /zivid_camera/crop_box/output
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: true
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 10
+        Min Value: -10
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz/PointCloud2
+      Color: 255; 255; 255
+      Color Transformer: RGB8
+      Decay Time: 0.30000001192092896
       Enabled: false
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Min Color: 0; 0; 0
+      Name: Zivid/outlier_removal
+      Position Transformer: XYZ
+      Queue Size: 10
+      Selectable: true
+      Size (Pixels): 5
+      Size (m): 0.009999999776482582
+      Style: Points
+      Topic: /zivid_camera/outlier_removal/output
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: false
+    - Class: rviz/Image
+      Enabled: true
       Image Topic: /tag_detections_image
       Max Value: 1
       Median window: 5
@@ -1032,7 +965,7 @@ Visualization Manager:
       Queue Size: 2
       Transport Hint: raw
       Unreliable: false
-      Value: false
+      Value: true
     - Class: rviz/Marker
       Enabled: false
       Marker Topic: /reachability/reachability_sphere
@@ -1046,7 +979,7 @@ Visualization Manager:
       Marker Topic: /noether_client/input_mesh_marker
       Name: Specimen Mesh
       Namespaces:
-        input_mesh: true
+        {}
       Queue Size: 100
       Value: true
     - Alpha: 1
@@ -1331,7 +1264,7 @@ Visualization Manager:
       Color: 255; 255; 255
       Color Transformer: Intensity
       Decay Time: 0
-      Enabled: true
+      Enabled: false
       Invert Rainbow: true
       Max Color: 255; 255; 255
       Min Color: 0; 0; 0
@@ -1346,7 +1279,7 @@ Visualization Manager:
       Unreliable: false
       Use Fixed Frame: true
       Use rainbow: true
-      Value: true
+      Value: false
     - Alpha: 1
       Autocompute Intensity Bounds: true
       Autocompute Value Bounds:
@@ -1359,7 +1292,7 @@ Visualization Manager:
       Color: 255; 255; 255
       Color Transformer: Intensity
       Decay Time: 0
-      Enabled: true
+      Enabled: false
       Invert Rainbow: true
       Max Color: 255; 255; 255
       Min Color: 0; 0; 0
@@ -1374,7 +1307,7 @@ Visualization Manager:
       Unreliable: false
       Use Fixed Frame: true
       Use rainbow: true
-      Value: true
+      Value: false
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -1403,7 +1336,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/ThirdPersonFollower
-      Distance: 6.45016622543335
+      Distance: 4.842102527618408
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -1419,9 +1352,9 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.6097968220710754
+      Pitch: 0.5047965049743652
       Target Frame: base_link
-      Yaw: 3.1284608840942383
+      Yaw: 6.146652698516846
     Saved:
       - Angle: 0
         Class: rviz/TopDownOrtho
@@ -1469,8 +1402,8 @@ Window Geometry:
     collapsed: false
   MotionPlanning - Trajectory Slider:
     collapsed: false
-  QMainWindow State: 000000ff00000000fd000000040000000000000156000003d7fc020000000efb0000001200530065006c0065006300740069006f006e000000003d000000770000005c00fffffffb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c006100790073010000003d000003d7000000c900fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261fb000000280020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000000000000000fb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e006700000002770000019d0000017d00fffffffb000000280020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000000000000000fb00000044004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000001600000016fb0000004200410072006d005400720061006a006500630074006f007200790020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000001600000016fb00000018005200650061006c00530065006e007300650052004700420000000187000001370000001600fffffffb0000001c00540061006700200044006500740065006300740069006f006e007300000002bc000001580000001600ffffff00000001000001e2000003d7fc0200000003fc0000003d000003d70000000000fffffffaffffffff0100000002fb0000000a005600690065007700730000000000ffffffff0000010000fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007300000006410000010f0000009d00fffffffb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000146000001190000000000000000fb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e100000197000000030000075000000039fc0100000002fb0000000800540069006d0065010000000000000750000003bc00fffffffb0000000800540069006d00650100000000000004500000000000000000000005f4000003d700000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
-  RealSenseRGB:
+  QMainWindow State: 000000ff00000000fd0000000400000000000001e7000003d7fc020000000ffb0000001200530065006c0065006300740069006f006e000000003d000000770000005c00fffffffb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c006100790073010000003d0000021e000000c900fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261fb000000280020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000000000000000fb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e006700000002770000019d0000017d00fffffffb000000280020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000000000000000fb00000044004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000001600000016fb0000004200410072006d005400720061006a006500630074006f007200790020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000001600000016fb0000001a005200650061006c00530065006e00730065002f0052004700420000000187000001370000001600fffffffb0000001c00540061006700200044006500740065006300740069006f006e00730100000261000001b30000001600fffffffb00000012005a0069007600690064002f00520047004200000002ff000001150000001600ffffff00000001000001e2000003d7fc0200000003fc0000003d000003d70000000000fffffffaffffffff0100000002fb0000000a005600690065007700730000000000ffffffff0000010000fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007300000006410000010f0000009d00fffffffb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000146000001190000000000000000fb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e100000197000000030000075000000039fc0100000002fb0000000800540069006d0065010000000000000750000003bc00fffffffb0000000800540069006d0065010000000000000450000000000000000000000563000003d700000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  RealSense/RGB:
     collapsed: false
   Selection:
     collapsed: false
@@ -1485,3 +1418,5 @@ Window Geometry:
   Width: 1872
   X: 48
   Y: 27
+  Zivid/RGB:
+    collapsed: false
