@@ -4,7 +4,7 @@ Panels:
     Name: Displays
     Property Tree Widget:
       Expanded: ~
-      Splitter Ratio: 0.4343598186969757
+      Splitter Ratio: 0.7829977869987488
     Tree Height: 481
   - Class: rviz/Selection
     Name: Selection
@@ -23,7 +23,7 @@ Panels:
   - Class: rviz/Time
     Name: Time
     SyncMode: 0
-    SyncSource: Tag Detections
+    SyncSource: PointCloud
 Preferences:
   PromptSaveOnExit: true
 Toolbars:
@@ -71,7 +71,7 @@ Visualization Manager:
       Color: 255; 0; 0
       Color Transformer: FlatColor
       Decay Time: 0
-      Enabled: false
+      Enabled: true
       Invert Rainbow: false
       Max Color: 168; 4; 21
       Min Color: 0; 0; 0
@@ -86,7 +86,7 @@ Visualization Manager:
       Unreliable: false
       Use Fixed Frame: true
       Use rainbow: true
-      Value: false
+      Value: true
     - Alpha: 1
       Class: rviz/Polygon
       Color: 255; 0; 0
@@ -310,18 +310,135 @@ Visualization Manager:
     - Alpha: 0.800000011920929
       Class: rviz/RobotModel
       Collision Enabled: false
-      Enabled: false
+      Enabled: true
       Links:
         All Links Enabled: true
         Expand Joint Details: false
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
+        iiwa_link_0:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        iiwa_link_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        iiwa_link_2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        iiwa_link_3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        iiwa_link_4:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        iiwa_link_5:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        iiwa_link_6:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        iiwa_link_7:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        iiwa_link_ee:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        kmr_back_left_wheel_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        kmr_back_right_wheel_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        kmr_base_footprint:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        kmr_base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        kmr_base_top_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        kmr_front_left_wheel_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        kmr_front_right_wheel_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        kmr_laser_B1_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        kmr_laser_B4_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        kmr_riser_flange_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ltpa:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        roller_probe_with_zivid_base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        roller_probe_with_zivid_contact_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        roller_probe_with_zivid_zivid_origin:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        zivid_base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        zivid_optical_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
       Name: RobotModel
       Robot Description: /robot_description
       TF Prefix: ""
       Update Interval: 0
-      Value: false
+      Value: true
       Visual Enabled: true
     - Acceleration_Scaling_Factor: 0.1
       Class: moveit_rviz_plugin/MotionPlanning
@@ -562,82 +679,12 @@ Visualization Manager:
       Value: false
       Width: 0.019999999552965164
     - Class: rviz/TF
-      Enabled: true
+      Enabled: false
       Filter (blacklist): ""
       Filter (whitelist): ""
       Frame Timeout: 15
       Frames:
         All Enabled: true
-        back_laser:
-          Value: true
-        base_link:
-          Value: true
-        bundle_2:
-          Value: true
-        fixture_2:
-          Value: true
-        fixture_2_z_up:
-          Value: true
-        front_laser:
-          Value: true
-        iiwa_link_0:
-          Value: true
-        iiwa_link_1:
-          Value: true
-        iiwa_link_2:
-          Value: true
-        iiwa_link_3:
-          Value: true
-        iiwa_link_4:
-          Value: true
-        iiwa_link_5:
-          Value: true
-        iiwa_link_6:
-          Value: true
-        iiwa_link_7:
-          Value: true
-        iiwa_link_ee:
-          Value: true
-        kmr_back_left_wheel_link:
-          Value: true
-        kmr_back_right_wheel_link:
-          Value: true
-        kmr_base_footprint:
-          Value: true
-        kmr_base_link:
-          Value: true
-        kmr_base_top_link:
-          Value: true
-        kmr_front_left_wheel_link:
-          Value: true
-        kmr_front_right_wheel_link:
-          Value: true
-        kmr_laser_B1_link:
-          Value: true
-        kmr_laser_B4_link:
-          Value: true
-        kmr_riser_flange_link:
-          Value: true
-        ltpa:
-          Value: true
-        map:
-          Value: true
-        odom:
-          Value: true
-        pcl_crop_box_2:
-          Value: true
-        reach:
-          Value: true
-        roller_probe_with_zivid_base_link:
-          Value: true
-        roller_probe_with_zivid_contact_frame:
-          Value: true
-        roller_probe_with_zivid_zivid_origin:
-          Value: true
-        zivid_base_link:
-          Value: true
-        zivid_optical_frame:
-          Value: true
       Marker Alpha: 1
       Marker Scale: 0.5
       Name: TF
@@ -645,56 +692,9 @@ Visualization Manager:
       Show Axes: true
       Show Names: false
       Tree:
-        map:
-          fixture_2:
-            fixture_2_z_up:
-              {}
-            pcl_crop_box_2:
-              {}
-          odom:
-            base_link:
-              back_laser:
-                {}
-              front_laser:
-                {}
-              kmr_base_footprint:
-                kmr_base_link:
-                  kmr_back_left_wheel_link:
-                    {}
-                  kmr_back_right_wheel_link:
-                    {}
-                  kmr_base_top_link:
-                    kmr_riser_flange_link:
-                      iiwa_link_0:
-                        iiwa_link_1:
-                          iiwa_link_2:
-                            iiwa_link_3:
-                              iiwa_link_4:
-                                iiwa_link_5:
-                                  iiwa_link_6:
-                                    iiwa_link_7:
-                                      iiwa_link_ee:
-                                        roller_probe_with_zivid_base_link:
-                                          roller_probe_with_zivid_contact_frame:
-                                            ltpa:
-                                              {}
-                                          roller_probe_with_zivid_zivid_origin:
-                                            zivid_base_link:
-                                              zivid_optical_frame:
-                                                bundle_2:
-                                                  {}
-                          reach:
-                            {}
-                  kmr_front_left_wheel_link:
-                    {}
-                  kmr_front_right_wheel_link:
-                    {}
-                  kmr_laser_B1_link:
-                    {}
-                  kmr_laser_B4_link:
-                    {}
+        {}
       Update Interval: 0
-      Value: true
+      Value: false
     - Class: rviz/Image
       Enabled: false
       Image Topic: /rs_camera_1/color/image_rect
@@ -1027,7 +1027,7 @@ Visualization Manager:
       Axes Radius: 0.009999999776482582
       Class: rviz/PoseArray
       Color: 255; 25; 0
-      Enabled: true
+      Enabled: false
       Head Length: 0.07000000029802322
       Head Radius: 0.029999999329447746
       Name: /noether_client/tool_pass_approach_000
@@ -1037,31 +1037,14 @@ Visualization Manager:
       Shape: Arrow (Flat)
       Topic: /noether_client/tool_pass_approach_000
       Unreliable: false
-      Value: true
-    - Alpha: 1
-      Arrow Length: 0.05000000074505806
-      Axes Length: 0.30000001192092896
-      Axes Radius: 0.009999999776482582
-      Class: rviz/PoseArray
-      Color: 0; 0; 0
-      Enabled: true
-      Head Length: 0.07000000029802322
-      Head Radius: 0.029999999329447746
-      Name: /noether_client/tool_pass_contact_000
-      Queue Size: 10
-      Shaft Length: 0.23000000417232513
-      Shaft Radius: 0.009999999776482582
-      Shape: Arrow (Flat)
-      Topic: /noether_client/tool_pass_contact_000
-      Unreliable: false
-      Value: true
+      Value: false
     - Alpha: 1
       Arrow Length: 0.05000000074505806
       Axes Length: 0.30000001192092896
       Axes Radius: 0.009999999776482582
       Class: rviz/PoseArray
       Color: 115; 210; 22
-      Enabled: true
+      Enabled: false
       Head Length: 0.07000000029802322
       Head Radius: 0.029999999329447746
       Name: /noether_client/tool_pass_leave_000
@@ -1071,14 +1054,14 @@ Visualization Manager:
       Shape: Arrow (Flat)
       Topic: /noether_client/tool_pass_leave_000
       Unreliable: false
-      Value: true
+      Value: false
     - Alpha: 1
       Arrow Length: 0.05000000074505806
       Axes Length: 0.30000001192092896
       Axes Radius: 0.009999999776482582
       Class: rviz/PoseArray
       Color: 255; 25; 0
-      Enabled: true
+      Enabled: false
       Head Length: 0.07000000029802322
       Head Radius: 0.029999999329447746
       Name: /noether_client/tool_pass_approach_001
@@ -1088,31 +1071,14 @@ Visualization Manager:
       Shape: Arrow (Flat)
       Topic: /noether_client/tool_pass_approach_001
       Unreliable: false
-      Value: true
-    - Alpha: 1
-      Arrow Length: 0.05000000074505806
-      Axes Length: 0.30000001192092896
-      Axes Radius: 0.009999999776482582
-      Class: rviz/PoseArray
-      Color: 0; 0; 0
-      Enabled: true
-      Head Length: 0.07000000029802322
-      Head Radius: 0.029999999329447746
-      Name: /noether_client/tool_pass_contact_001
-      Queue Size: 10
-      Shaft Length: 0.23000000417232513
-      Shaft Radius: 0.009999999776482582
-      Shape: Arrow (Flat)
-      Topic: /noether_client/tool_pass_contact_001
-      Unreliable: false
-      Value: true
+      Value: false
     - Alpha: 1
       Arrow Length: 0.05000000074505806
       Axes Length: 0.30000001192092896
       Axes Radius: 0.009999999776482582
       Class: rviz/PoseArray
       Color: 115; 210; 22
-      Enabled: true
+      Enabled: false
       Head Length: 0.07000000029802322
       Head Radius: 0.029999999329447746
       Name: /noether_client/tool_pass_leave_001
@@ -1121,38 +1087,6 @@ Visualization Manager:
       Shaft Radius: 0.009999999776482582
       Shape: Arrow (Flat)
       Topic: /noether_client/tool_pass_leave_001
-      Unreliable: false
-      Value: true
-    - Alpha: 1
-      Axes Length: 0.10000000149011612
-      Axes Radius: 0.009999999776482582
-      Class: rviz/Pose
-      Color: 255; 25; 0
-      Enabled: false
-      Head Length: 0.30000001192092896
-      Head Radius: 0.10000000149011612
-      Name: /view_planner/ndt_approach_base_location_002
-      Queue Size: 10
-      Shaft Length: 1
-      Shaft Radius: 0.05000000074505806
-      Shape: Axes
-      Topic: /view_planner/ndt_leave_base_location_002
-      Unreliable: false
-      Value: false
-    - Alpha: 1
-      Axes Length: 0.10000000149011612
-      Axes Radius: 0.009999999776482582
-      Class: rviz/Pose
-      Color: 255; 25; 0
-      Enabled: false
-      Head Length: 0.30000001192092896
-      Head Radius: 0.10000000149011612
-      Name: /view_planner/ndt_leave_base_location_002
-      Queue Size: 10
-      Shaft Length: 1
-      Shaft Radius: 0.05000000074505806
-      Shape: Axes
-      Topic: /view_planner/ndt_approach_base_location_002
       Unreliable: false
       Value: false
     - Alpha: 1
@@ -1170,23 +1104,6 @@ Visualization Manager:
       Shaft Radius: 0.009999999776482582
       Shape: Arrow (Flat)
       Topic: /noether_client/tool_pass_approach_002
-      Unreliable: false
-      Value: true
-    - Alpha: 1
-      Arrow Length: 0.05000000074505806
-      Axes Length: 0.30000001192092896
-      Axes Radius: 0.009999999776482582
-      Class: rviz/PoseArray
-      Color: 0; 0; 0
-      Enabled: true
-      Head Length: 0.07000000029802322
-      Head Radius: 0.029999999329447746
-      Name: /noether_client/tool_pass_contact_002
-      Queue Size: 10
-      Shaft Length: 0.23000000417232513
-      Shaft Radius: 0.009999999776482582
-      Shape: Arrow (Flat)
-      Topic: /noether_client/tool_pass_contact_002
       Unreliable: false
       Value: true
     - Alpha: 1
@@ -1212,7 +1129,7 @@ Visualization Manager:
       Axes Radius: 0.009999999776482582
       Class: rviz/PoseArray
       Color: 255; 25; 0
-      Enabled: true
+      Enabled: false
       Head Length: 0.07000000029802322
       Head Radius: 0.029999999329447746
       Name: /noether_client/tool_pass_approach_003
@@ -1221,6 +1138,106 @@ Visualization Manager:
       Shaft Radius: 0.009999999776482582
       Shape: Arrow (Flat)
       Topic: /noether_client/tool_pass_approach_003
+      Unreliable: false
+      Value: false
+    - Alpha: 1
+      Arrow Length: 0.05000000074505806
+      Axes Length: 0.30000001192092896
+      Axes Radius: 0.009999999776482582
+      Class: rviz/PoseArray
+      Color: 115; 210; 22
+      Enabled: false
+      Head Length: 0.07000000029802322
+      Head Radius: 0.029999999329447746
+      Name: /noether_client/tool_pass_leave_003
+      Queue Size: 10
+      Shaft Length: 0.23000000417232513
+      Shaft Radius: 0.009999999776482582
+      Shape: Arrow (Flat)
+      Topic: /noether_client/tool_pass_leave_003
+      Unreliable: false
+      Value: false
+    - Alpha: 1
+      Axes Length: 0.10000000149011612
+      Axes Radius: 0.009999999776482582
+      Class: rviz/Pose
+      Color: 255; 25; 0
+      Enabled: false
+      Head Length: 0.30000001192092896
+      Head Radius: 0.10000000149011612
+      Name: /view_planner/ndt_leave_base_location_002
+      Queue Size: 10
+      Shaft Length: 1
+      Shaft Radius: 0.05000000074505806
+      Shape: Axes
+      Topic: /view_planner/ndt_approach_base_location_002
+      Unreliable: false
+      Value: false
+    - Alpha: 1
+      Axes Length: 0.10000000149011612
+      Axes Radius: 0.009999999776482582
+      Class: rviz/Pose
+      Color: 255; 25; 0
+      Enabled: false
+      Head Length: 0.30000001192092896
+      Head Radius: 0.10000000149011612
+      Name: /view_planner/ndt_approach_base_location_002
+      Queue Size: 10
+      Shaft Length: 1
+      Shaft Radius: 0.05000000074505806
+      Shape: Axes
+      Topic: /view_planner/ndt_leave_base_location_002
+      Unreliable: false
+      Value: false
+    - Alpha: 1
+      Arrow Length: 0.05000000074505806
+      Axes Length: 0.30000001192092896
+      Axes Radius: 0.009999999776482582
+      Class: rviz/PoseArray
+      Color: 0; 0; 0
+      Enabled: false
+      Head Length: 0.07000000029802322
+      Head Radius: 0.029999999329447746
+      Name: /noether_client/tool_pass_contact_000
+      Queue Size: 10
+      Shaft Length: 0.23000000417232513
+      Shaft Radius: 0.009999999776482582
+      Shape: Arrow (Flat)
+      Topic: /noether_client/tool_pass_contact_000
+      Unreliable: false
+      Value: false
+    - Alpha: 1
+      Arrow Length: 0.05000000074505806
+      Axes Length: 0.30000001192092896
+      Axes Radius: 0.009999999776482582
+      Class: rviz/PoseArray
+      Color: 0; 0; 0
+      Enabled: false
+      Head Length: 0.07000000029802322
+      Head Radius: 0.029999999329447746
+      Name: /noether_client/tool_pass_contact_001
+      Queue Size: 10
+      Shaft Length: 0.23000000417232513
+      Shaft Radius: 0.009999999776482582
+      Shape: Arrow (Flat)
+      Topic: /noether_client/tool_pass_contact_001
+      Unreliable: false
+      Value: false
+    - Alpha: 1
+      Arrow Length: 0.05000000074505806
+      Axes Length: 0.30000001192092896
+      Axes Radius: 0.009999999776482582
+      Class: rviz/PoseArray
+      Color: 0; 0; 0
+      Enabled: true
+      Head Length: 0.07000000029802322
+      Head Radius: 0.029999999329447746
+      Name: /noether_client/tool_pass_contact_002
+      Queue Size: 10
+      Shaft Length: 0.23000000417232513
+      Shaft Radius: 0.009999999776482582
+      Shape: Arrow (Flat)
+      Topic: /noether_client/tool_pass_contact_002
       Unreliable: false
       Value: true
     - Alpha: 1
@@ -1245,16 +1262,118 @@ Visualization Manager:
       Axes Length: 0.30000001192092896
       Axes Radius: 0.009999999776482582
       Class: rviz/PoseArray
-      Color: 115; 210; 22
+      Color: 0; 0; 0
       Enabled: true
       Head Length: 0.07000000029802322
       Head Radius: 0.029999999329447746
-      Name: /noether_client/tool_pass_leave_003
+      Name: /noether_client/tool_pass_contact_004
       Queue Size: 10
       Shaft Length: 0.23000000417232513
       Shaft Radius: 0.009999999776482582
       Shape: Arrow (Flat)
-      Topic: /noether_client/tool_pass_leave_003
+      Topic: /noether_client/tool_pass_contact_004
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Arrow Length: 0.05000000074505806
+      Axes Length: 0.30000001192092896
+      Axes Radius: 0.009999999776482582
+      Class: rviz/PoseArray
+      Color: 0; 0; 0
+      Enabled: true
+      Head Length: 0.07000000029802322
+      Head Radius: 0.029999999329447746
+      Name: /noether_client/tool_pass_contact_005
+      Queue Size: 10
+      Shaft Length: 0.23000000417232513
+      Shaft Radius: 0.009999999776482582
+      Shape: Arrow (Flat)
+      Topic: /noether_client/tool_pass_contact_005
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Arrow Length: 0.05000000074505806
+      Axes Length: 0.30000001192092896
+      Axes Radius: 0.009999999776482582
+      Class: rviz/PoseArray
+      Color: 0; 0; 0
+      Enabled: true
+      Head Length: 0.07000000029802322
+      Head Radius: 0.029999999329447746
+      Name: /noether_client/tool_pass_contact_006
+      Queue Size: 10
+      Shaft Length: 0.23000000417232513
+      Shaft Radius: 0.009999999776482582
+      Shape: Arrow (Flat)
+      Topic: /noether_client/tool_pass_contact_006
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Arrow Length: 0.05000000074505806
+      Axes Length: 0.30000001192092896
+      Axes Radius: 0.009999999776482582
+      Class: rviz/PoseArray
+      Color: 0; 0; 0
+      Enabled: true
+      Head Length: 0.07000000029802322
+      Head Radius: 0.029999999329447746
+      Name: /noether_client/tool_pass_contact_007
+      Queue Size: 10
+      Shaft Length: 0.23000000417232513
+      Shaft Radius: 0.009999999776482582
+      Shape: Arrow (Flat)
+      Topic: /noether_client/tool_pass_contact_007
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Arrow Length: 0.05000000074505806
+      Axes Length: 0.30000001192092896
+      Axes Radius: 0.009999999776482582
+      Class: rviz/PoseArray
+      Color: 0; 0; 0
+      Enabled: true
+      Head Length: 0.07000000029802322
+      Head Radius: 0.029999999329447746
+      Name: /noether_client/tool_pass_contact_008
+      Queue Size: 10
+      Shaft Length: 0.23000000417232513
+      Shaft Radius: 0.009999999776482582
+      Shape: Arrow (Flat)
+      Topic: /noether_client/tool_pass_contact_008
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Arrow Length: 0.05000000074505806
+      Axes Length: 0.30000001192092896
+      Axes Radius: 0.009999999776482582
+      Class: rviz/PoseArray
+      Color: 0; 0; 0
+      Enabled: true
+      Head Length: 0.07000000029802322
+      Head Radius: 0.029999999329447746
+      Name: /noether_client/tool_pass_contact_009
+      Queue Size: 10
+      Shaft Length: 0.23000000417232513
+      Shaft Radius: 0.009999999776482582
+      Shape: Arrow (Flat)
+      Topic: /noether_client/tool_pass_contact_009
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Arrow Length: 0.05000000074505806
+      Axes Length: 0.30000001192092896
+      Axes Radius: 0.009999999776482582
+      Class: rviz/PoseArray
+      Color: 0; 0; 0
+      Enabled: true
+      Head Length: 0.07000000029802322
+      Head Radius: 0.029999999329447746
+      Name: /noether_client/tool_pass_contact_010
+      Queue Size: 10
+      Shaft Length: 0.23000000417232513
+      Shaft Radius: 0.009999999776482582
+      Shape: Arrow (Flat)
+      Topic: /noether_client/tool_pass_contact_010
       Unreliable: false
       Value: true
     - Alpha: 1
@@ -1313,6 +1432,34 @@ Visualization Manager:
       Use Fixed Frame: true
       Use rainbow: true
       Value: false
+    - Alpha: 0.10000000149011612
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 10
+        Min Value: -10
+        Value: true
+      Axis: Z
+      Channel Name: Amplitudes
+      Class: rviz/PointCloud2
+      Color: 255; 255; 255
+      Color Transformer: Intensity
+      Decay Time: 0
+      Enabled: true
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Min Color: 0; 0; 0
+      Name: Peak B Scan
+      Position Transformer: XYZ
+      Queue Size: 10
+      Selectable: true
+      Size (Pixels): 10
+      Size (m): 0.009999999776482582
+      Style: Points
+      Topic: /peak/b_scan
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: true
     - Alpha: 0.5
       Autocompute Intensity Bounds: true
       Autocompute Value Bounds:
@@ -1325,7 +1472,7 @@ Visualization Manager:
       Color: 255; 255; 255
       Color Transformer: Intensity
       Decay Time: 0
-      Enabled: true
+      Enabled: false
       Invert Rainbow: false
       Max Color: 255; 255; 255
       Min Color: 0; 0; 0
@@ -1340,6 +1487,24 @@ Visualization Manager:
       Unreliable: false
       Use Fixed Frame: true
       Use rainbow: true
+      Value: false
+    - Alpha: 1
+      Class: rviz/Axes
+      Enabled: true
+      Length: 0.014999999664723873
+      Name: contact
+      Radius: 0.0020000000949949026
+      Reference Frame: roller_probe_with_zivid_contact_frame
+      Show Trail: false
+      Value: true
+    - Alpha: 0.5
+      Class: rviz/Axes
+      Enabled: true
+      Length: 0.009999999776482582
+      Name: ltpa
+      Radius: 0.0010000000474974513
+      Reference Frame: ltpa
+      Show Trail: false
       Value: true
   Enabled: true
   Global Options:
@@ -1369,7 +1534,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/ThirdPersonFollower
-      Distance: 2.4571259021759033
+      Distance: 5.660984516143799
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -1377,7 +1542,7 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: 0.800000011920929
+        X: 0
         Y: 0
         Z: 0
       Focal Shape Fixed Size: false
@@ -1385,9 +1550,9 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.0403982475399971
-      Target Frame: pcl_crop_box_2
-      Yaw: 4.6185832023620605
+      Pitch: 0.4403983950614929
+      Target Frame: base_link
+      Yaw: 3.0503950119018555
     Saved:
       - Angle: 0
         Class: rviz/TopDownOrtho
